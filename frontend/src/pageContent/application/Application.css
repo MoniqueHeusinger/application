@@ -1,3 +1,13 @@
-.text-position-right {}
+.shadow-box {
+    box-shadow: 2px 4px 7px 2px #0000002c;
+}
 
-.text-position-left {}
+.custom-width-studyCoding {
+    max-width: 250px;
+}
+
+.hearts-gif {
+    max-width: 80px;
+    position: absolute;
+    top: 20px;
+}

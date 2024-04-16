@@ -58,6 +58,10 @@ body {
   margin-block: 8rem;
 }
 
+.mt-11 {
+  margin-top: 8rem;
+}
+
 .mt-250 {
   margin-top: 250px;
 }
@@ -68,6 +72,10 @@ body {
 
 .px-6 {
   padding-inline: 4rem;
+}
+
+.ps-7 {
+  padding-left: 5rem;
 }
 
 .border-test {
