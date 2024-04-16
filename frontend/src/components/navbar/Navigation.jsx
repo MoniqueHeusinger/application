@@ -5,6 +5,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 const Navigation = () => {
+    const scrollToArea = (id) => {
+        const area = document.getElementById(id);
+        if (area) {
+            area.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            window.scrollTo(0, area.offsetTop - 100);
+        }
+    };
+
     return (
         <>
             {['md'].map((expand) => (
@@ -24,10 +32,10 @@ const Navigation = () => {
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1">
-                                    <Nav.Link href="#about" className="px-4 py-3">Über mich</Nav.Link>
-                                    <Nav.Link href="#action2" className="px-4 py-3">Bewerbung</Nav.Link>
-                                    <Nav.Link href="#certificates" className="px-4 py-3">Zeugnisse</Nav.Link>
-                                    <Nav.Link href="#action2" className="px-4 py-3">Kontakt</Nav.Link>
+                                    <Nav.Link onClick={() => scrollToArea('about')} className="px-4 py-3">Über mich</Nav.Link>
+                                    <Nav.Link onClick={() => scrollToArea('application')} className="px-4 py-3">Bewerbung</Nav.Link>
+                                    <Nav.Link onClick={() => scrollToArea('certificates')} className="px-4 py-3">Zeugnisse</Nav.Link>
+                                    <Nav.Link onClick={() => scrollToArea('contact')} className="px-4 py-3">Kontakt</Nav.Link>
 
                                 </Nav>
 

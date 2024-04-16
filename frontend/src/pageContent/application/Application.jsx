@@ -4,11 +4,14 @@ import realBag from "../../assets/img/real-bag.svg";
 import handshake from "../../assets/img/handshake.png";
 import bootcamp from "../../assets/img/bootcamp.svg";
 import heartGIF from "../../assets/img/hearts.gif";
+import ButtonClassic from "../../components/button/ButtonClassic";
 
-const Application = () => {
+const Application = ({ scrollToContact }) => {
+
+
     return (
         <>
-            <div className="container-full-width bg-beige mt-11 pb-5">
+            <div className="container-full-width bg-beige mt-11 pb-5" id="application">
                 <div className="row">
                     <h2 className="pt-5 pb-3">Bewerbung</h2>
                 </div>
@@ -80,6 +83,11 @@ const Application = () => {
                 <div className="col-12 shadow-box rounded-4 py-4 px-6">
                     <p>So wie ihr die Produkte eurer Kunden absichert, garantiere ich dir: Mit Entschlossenheit und Kreativität schaffe ich Frontend-Lösungen von bleibendem Wert!</p>
                 </div>
+            </div>
+
+            <div className="row mx-auto px-center-120 mt-5 flex-column" id="getInContact">
+                <h3>Ihr wollt mich persönlich kennenlernen?</h3>
+                <ButtonClassic btnVariant="transparent-dark" buttonText="zu meinen Kontaktdaten" onClick={scrollToContact} />
             </div>
         </>
     );

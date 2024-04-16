@@ -1,0 +1,13 @@
+#iconContainerMail,
+#iconContainerPhone,
+#iconContainerAddress {
+    width: 120px;
+    height: 100%;
+    background-color: var(--beige);
+}
+
+#iconContainerMail>img,
+#iconContainerPhone>img,
+#iconContainerAddress>img {
+    width: 40px;
+}

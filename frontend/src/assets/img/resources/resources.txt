@@ -51,3 +51,13 @@ bag
 roof
 <a target="_blank" href="https://icons8.com/icon/4856/roofing">Dachdecken</a> Icon von <a target="_blank" href="https://icons8.com">Icons8</a>
 
+mail
+<a target="_blank" href="https://icons8.com/icon/86875/mail">Mail</a> Icon von <a target="_blank" href="https://icons8.com">Icons8</a>
+
+
+phone
+<a target="_blank" href="https://icons8.com/icon/9730/phone">Telefon</a> Icon von <a target="_blank" href="https://icons8.com">Icons8</a>
+
+location
+<a target="_blank" href="https://icons8.com/icon/7880/location">Marker</a> Icon von <a target="_blank" href="https://icons8.com">Icons8</a>
+

@@ -10,10 +10,27 @@ import About from "./pageContent/about/About";
 import Application from "./pageContent/application/Application";
 import ProfessionalData from "./pageContent/professionalData/ProfessionalData";
 import Certificates from "./pageContent/certificates/Certificates";
+import Contact from "./pageContent/contact/Contact";
 
 
 
 function App() {
+  const scrollToContact = () => {
+    const contactElement = document.getElementById('contact');
+    if (contactElement) {
+      contactElement.scrollIntoView({ behavior: 'smooth' });
+      window.scrollTo(0, contactElement.offsetTop - 100);
+    }
+  };
+
+  const scrollToCertificates = () => {
+    const certificatesElement = document.getElementById('certificates');
+    if (certificatesElement) {
+      certificatesElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      window.scrollTo(0, certificatesElement.offsetTop - 100);
+    }
+  };
+
   return (
     <>
       <Navigation />
@@ -25,10 +42,11 @@ function App() {
 
 
       <About />
-      <ProfessionalData />
+      <ProfessionalData scrollToCertificates={scrollToCertificates} />
 
-      <Application />
+      <Application scrollToContact={scrollToContact} />
       <Certificates />
+      <Contact />
       <Footer />
     </>
   )

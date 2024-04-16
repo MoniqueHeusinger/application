@@ -8,7 +8,7 @@ import karriereTutorLogo from "../../assets/img/karrieretutor-logo.jpg";
 import realLogo from "../../assets/img/real-logo.png";
 import hsNiederrheinLogo from "../../assets/img/hs-niederrhein-logo.png";
 
-const ProfessionalData = () => {
+const ProfessionalData = ({ scrollToCertificates }) => {
     const stackList = ["HTML", "CSS", "JavaScript(EC6)", "SCSS", "React", "Node.js", "Express", "MongoDB", "Mongoose", "RESTAPI", "Git", "Tailwind", "UX/UI", "Scrum/Kanban", "AntDesign", "Jest"];
 
     const stackListHtmlCss = ["Grundstruktur HTML5", "Grundstruktur CSS3", "Box-Modell", "Flexbox", "Grid", "Bilder", "Animationen", "Links", "Webfonts", "Selektoren", "Stylesheets", "Responsive Design", "Multimedia", "Planung", "Debugging", "Webseite Upload"];
@@ -41,7 +41,7 @@ const ProfessionalData = () => {
 
                             <div className="col p-3 ps-5">
 
-                                {/* Accordion */}
+                                {/* Accordion Bootcamp*/}
                                 <div class="accordion" id="accordionWeiterbildungSuperCode">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
@@ -81,7 +81,7 @@ const ProfessionalData = () => {
                                                 <div className="row align-items-center mb-4">
                                                     <div className="col"><p>Web-App als Gruppenprojekt</p></div>
 
-                                                    <div className="col"><ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" /></div>
+                                                    <div className="col"><ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" onClick={scrollToCertificates} /></div>
                                                 </div>
                                             </div>
 
@@ -115,13 +115,11 @@ const ProfessionalData = () => {
                                             </div>
                                         </div>
                                     </div>
-
-
                                 </div>
                             </div>
                         </div>
 
-                        {/* Karrieretutor */}
+                        {/* karriere tutor */}
                         <div className="row my-7 bg-beige-light p-5 rounded-4">
                             <div className="col flex-grow-0">
                                 <div className="basic-logo-light rounded-circle d-flex align-items-center justify-content-center">
@@ -131,7 +129,7 @@ const ProfessionalData = () => {
 
                             <div className="col p-3 ps-5">
 
-                                {/* Accordion */}
+                                {/* Accordion karriere tutor*/}
                                 <div class="accordion" id="accordionWeiterbildungKarrieretutor">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
@@ -166,11 +164,9 @@ const ProfessionalData = () => {
                                                 <div className="row align-items-center">
                                                     <div className="col"><p>Prüfung (Note: 1,0)</p></div>
 
-                                                    <div className="col"><ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" /></div>
+                                                    <div className="col"><ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" onClick={scrollToCertificates} /></div>
                                                 </div>
                                             </div>
-
-
                                         </div>
                                     </div>
                                 </div>
@@ -215,14 +211,13 @@ const ProfessionalData = () => {
                                                     </div>
                                                 </Container>
 
-                                                <ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" />
+                                                <ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" onClick={scrollToCertificates} />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
@@ -257,20 +252,16 @@ const ProfessionalData = () => {
                                                 <p>(Webseite entwickelt mit HTML, CSS, PHP, MySQL)</p>
                                                 <p>Note: gut</p>
 
-                                                <ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" />
+                                                <ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" onClick={scrollToCertificates} />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
-
                 </div>
             </div>
-
         </>
     );
 }

@@ -3,17 +3,18 @@ import Button from "react-bootstrap/esm/Button";
 
 const ButtonClassic = ({ buttonText, btnVariant, onClick, url, additionalClassName, dataBsToggle, dataBsTarget, dataBsDismiss }) => {
     const handleBtnClick = () => {
-
-        if (url.startsWith('http')) {
-            window.open(url, '_blank');
-        } else {
-            const element = document.body.querySelector(`#${url}`);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
+        if (url) {
+            if (url.startsWith('http')) {
+                window.open(url, '_blank');
+            } else {
+                const element = document.body.querySelector(`#${url}`);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
             }
+        } else if (onClick) {
+            onClick();
         }
-
-
     };
 
     return (

@@ -11,3 +11,9 @@
     position: absolute;
     top: 20px;
 }
+
+#getInContact,
+#getInContact>button {
+    margin: 0 auto;
+    width: fit-content;
+}
