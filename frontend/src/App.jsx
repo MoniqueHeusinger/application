@@ -11,6 +11,8 @@ import Application from "./pageContent/application/Application";
 import ProfessionalData from "./pageContent/professionalData/ProfessionalData";
 import Certificates from "./pageContent/certificates/Certificates";
 import Contact from "./pageContent/contact/Contact";
+import ScrollToTopBtn from "./components/ScrollToTopBtn/ScrollToTopBtn";
+import { BrowserRouter, Routes } from "react-router-dom";
 
 
 
@@ -33,21 +35,26 @@ function App() {
 
   return (
     <>
-      <Navigation />
-      <Container className="mb-5 px-center-120">
-        <Hero />
-        <TechStack />
+      <BrowserRouter>
+        <Navigation />
+        <Container className="mb-5 px-center-120">
+          <Hero />
+          <TechStack />
 
-      </Container>
+        </Container>
 
 
-      <About />
-      <ProfessionalData scrollToCertificates={scrollToCertificates} />
+        <About />
+        <ProfessionalData scrollToCertificates={scrollToCertificates} />
 
-      <Application scrollToContact={scrollToContact} />
-      <Certificates />
-      <Contact />
-      <Footer />
+        <Application scrollToContact={scrollToContact} />
+        <Certificates />
+        <Contact />
+        <Footer />
+        <ScrollToTopBtn />
+      </BrowserRouter>
+
+
     </>
   )
 }

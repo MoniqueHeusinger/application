@@ -1,0 +1,11 @@
+.to-top {
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.to-top img {
+    width: 50px;
+}

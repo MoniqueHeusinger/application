@@ -61,3 +61,5 @@ phone
 location
 <a target="_blank" href="https://icons8.com/icon/7880/location">Marker</a> Icon von <a target="_blank" href="https://icons8.com">Icons8</a>
 
+top
+<a target="_blank" href="https://icons8.com/icon/26140/eingekreistes-rangabzeichen-oben">Eingekreistes Rangabzeichen Oben</a> Icon von <a target="_blank" href="https://icons8.com">Icons8</a>
