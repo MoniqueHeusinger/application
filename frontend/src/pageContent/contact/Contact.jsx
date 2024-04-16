@@ -2,6 +2,10 @@ import "./Contact.css";
 import mail from "../../assets/img/mail-white.png";
 import phone from "../../assets/img/phone-white.png";
 import address from "../../assets/img/location-white.png";
+import linkedInLogo from "../../assets/img/linkedin-logo.png";
+import xingLogo from "../../assets/img/xing-logo.png";
+import githubLogo from "../../assets/img/github-logo.png";
+import discordLogo from "../../assets/img/discord-logo.png";
 
 const Contact = () => {
     return (
@@ -48,6 +52,24 @@ const Contact = () => {
                 </div>
                 <div className="col">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160121.38735434876!2d6.249005134050994!3d51.16569422364861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8ac984c406469%3A0x5445cd8ac7bfc850!2sM%C3%B6nchengladbach!5e0!3m2!1sde!2sde!4v1713297680746!5m2!1sde!2sde" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div className="row mx-auto my-5 align-items-center social-icon-container">
+                {/* LinkedIn */}
+                <div className="col">
+                    <a href="https://linkedin.com/in/m-heusinger" target="_blank"><img src={linkedInLogo} class="social-icon" alt="LinkedIn" /></a>
+                </div>
+                {/* Xing */}
+                <div className="col">
+                    <a href="https://www.xing.com/profile/Monique_Heusinger" target="_blank"><img src={xingLogo} class="social-icon" alt="Xing" /></a>
+                </div>
+                {/* Github */}
+                <div className="col">
+                    <a href="https://github.com/MoniqueHeusinger" target="_blank"><img src={githubLogo} class="social-icon" alt="Github" /></a>
+                </div>
+                {/* Discord */}
+                <div className="col">
+                    <img src={discordLogo} class="social-icon" alt="Discord" />
                 </div>
             </div>
 

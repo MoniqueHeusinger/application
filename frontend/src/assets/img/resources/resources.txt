@@ -63,3 +63,15 @@ location
 
 top
 <a target="_blank" href="https://icons8.com/icon/26140/eingekreistes-rangabzeichen-oben">Eingekreistes Rangabzeichen Oben</a> Icon von <a target="_blank" href="https://icons8.com">Icons8</a>
+
+linkedin
+<a target="_blank" href="https://icons8.com/icon/60444/linkedin-circled">linkedin</a> Icon von <a target="_blank" href="https://icons8.com">Icons8</a>
+
+xing
+<a target="_blank" href="https://icons8.com/icon/oN0emNADVZYc/xing-a-european-career-oriented-social-networking-site">XING a European career oriented social networking site</a> Icon von <a target="_blank" href="https://icons8.com">Icons8</a>
+
+github
+<a target="_blank" href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub</a> Icon von <a target="_blank" href="https://icons8.com">Icons8</a>
+
+discord
+<a target="_blank" href="https://icons8.com/icon/30888/discord">Discord Logo</a> Icon von <a target="_blank" href="https://icons8.com">Icons8</a>

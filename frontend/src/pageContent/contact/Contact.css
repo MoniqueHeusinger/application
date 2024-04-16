@@ -11,3 +11,16 @@
 #iconContainerAddress>img {
     width: 40px;
 }
+
+.social-icon-container {
+    max-width: 400px;
+}
+
+.social-icon {
+    height: 60px;
+}
+
+.social-icon:hover {
+    transform: scale(110%);
+    transition: 0.4s;
+}
