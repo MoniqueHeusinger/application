@@ -1,16 +1,45 @@
-.tech-stack-container>div {
-    width: fit-content;
-    font-weight: 400;
-    color: var(--text-medium);
-    text-transform: uppercase;
+.ticker-wrap {
+    width: 100%;
+    white-space: nowrap;
 }
 
-.tech-stack-container div span {
-    width: fit-content;
-    display: inline-block;
-    border: 1px solid var(--text-medium);
+.ticker {
+    animation: tickerOne 60s linear infinite;
 }
 
-.tech-stack-container div span:hover {
-    box-shadow: 0px 4px 8px #0000002c;
+.item-collection-1 {
+    animation: tickerTwo 60s linear infinite;
+}
+
+.item {
+    border: 1px solid var(--grey-medium);
+}
+
+.item:hover {
+    cursor: pointer;
+    background-color: var(--grey-medium);
+    color: var(--beige-light);
+}
+
+@keyframes tickerOne {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(-100%)
+    }
+}
+
+@keyframes tickerTwo {
+
+    0%,
+    50% {
+        left: 0%;
+    }
+
+    50.01%,
+    100% {
+        left: 100%;
+    }
 }
