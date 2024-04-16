@@ -1,0 +1,24 @@
+/* ===============
+     Foto 
+=============== */
+.hero-img {
+    width: 250px;
+    height: 250px;
+    background: #fff url("../../assets/img/portrait-mh.svg") no-repeat top;
+    background-size: 80%;
+    border: 3px solid var(--grey-medium);
+    position: absolute;
+    top: -22%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border-radius: 50%; */
+    z-index: 1;
+}
+
+/* ===============
+    Hero text 
+=============== */
+
+.font-thin {
+    font-weight: 300;
+}

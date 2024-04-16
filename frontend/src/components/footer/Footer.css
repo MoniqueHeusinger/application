@@ -1,0 +1,9 @@
+.footer {
+    margin: 0;
+    background-color: var(--beige-light);
+    font-size: 0.8rem;
+}
+
+.container-full-width {
+    max-width: 100%;
+}

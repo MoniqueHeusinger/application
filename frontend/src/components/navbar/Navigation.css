@@ -1,0 +1,18 @@
+nav {
+    box-shadow: 0px 4px 8px #0000002c;
+}
+
+.bg-body-tertiary {
+    background-color: var(--beige-light) !important;
+}
+
+nav>div:first-of-type>a:first-of-type,
+.offcanvas-header>div {
+    font-family: "WaterBrush";
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.offcanvas-header>div {
+    font-size: 2rem;
+}

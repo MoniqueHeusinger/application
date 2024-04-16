@@ -1,0 +1,33 @@
+#about button {
+    height: 200px;
+    width: 200px;
+    background-color: var(--beige-light);
+
+    box-shadow: 1px 4px 6px 3px #0000002a;
+    color: var(--grey-medium);
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#about button:hover {
+    background-color: var(--beige-light);
+    border: 2px solid var(--grey-medium);
+    font-weight: 400;
+    color: var(--text-medium)
+}
+
+.activated {
+    background-color: var(--beige-light);
+    border: 2px solid var(--grey-medium);
+    font-weight: 400;
+    color: var(--text-medium)
+}
+
+.about-item {
+    width: fit-content;
+    font-size: .9rem;
+}
+
+.bolder {
+    font-weight: 600;
+}

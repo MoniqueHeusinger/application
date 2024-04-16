@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "WaterBrush";
+  src: url("./assets/fonts/WaterBrush-Regular.ttf");
+}
+
+/* ==================
+    General styles 
+====================== */
+:root {
+  --beige: #dbc7bd;
+  --beige-light: #F5F3F2;
+  --beige-dark: #7e7a71;
+  --grey-medium: #737373;
+  --brown: #846855;
+  --text-dark: #0F0F0F;
+  --text-medium: #545454;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.bg-beige {
+  background-color: var(--beige);
+}
+
+.bg-beige-light {
+  background-color: var(--beige-light);
+}
+
+.relative {
+  position: relative;
+}
+
+/* =====================
+    Margins, paddings
+======================= */
+.px-center-120 {
+  padding-inline: 100px;
+}
+
+.my-7 {
+  margin-block: 4rem;
+}
+
+.my-11 {
+  margin-block: 8rem;
+}
+
+.mt-250 {
+  margin-top: 250px;
+}
+
+.pt-10 {
+  padding-top: 10rem;
+}
+
+.px-6 {
+  padding-inline: 4rem;
+}
+
+.border-test {
+  border: 2px solid red;
+}

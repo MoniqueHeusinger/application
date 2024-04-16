@@ -1,0 +1,26 @@
+.border {
+    border-color: var(--grey-medium) !important;
+    columns: var(--grey-medium);
+}
+
+/* ==================
+    Button styles 
+====================== */
+.btn-transparent-light {
+    background-color: transparent;
+}
+
+.btn-transparent-dark {
+    background-color: transparent;
+}
+
+.btn-transparent-light:hover {
+    background-color: var(--beige-light);
+    transition: 0.4s;
+}
+
+
+.btn-transparent-dark:hover {
+    background-color: var(--grey-medium);
+    color: var(--beige-light);
+}

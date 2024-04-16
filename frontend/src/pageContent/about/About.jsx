@@ -1,0 +1,94 @@
+import { useState } from "react";
+import "./About.css";
+import Container from "react-bootstrap/esm/Container";
+
+const About = () => {
+    const [personalIsClicked, setPersonalIsClicked] = useState(false);
+    const [goalsIsClicked, setGoalsIsClicked] = useState(false);
+    const [funFactsIsClicked, setFunFactsIsClicked] = useState(false);
+
+    const handlePersonalButtonClicked = (event) => {
+        event.preventDefault();
+        setPersonalIsClicked(!personalIsClicked);
+    }
+
+    const handleGoalsButtonClicked = (event) => {
+        event.preventDefault();
+        setGoalsIsClicked(!goalsIsClicked);
+    }
+
+    const handleFunFactsButtonClicked = (event) => {
+        event.preventDefault();
+        setFunFactsIsClicked(!funFactsIsClicked);
+    }
+
+    return (
+        <div className="container-full-width bg-beige text-center my-11 pb-5" id="about">
+            <h2 className="py-5">Über mich</h2>
+
+            <div className="row mx-auto px-center-120">
+                <div className="col">
+                    <button className={personalIsClicked ? "btn rounded-circle activated" : "btn rounded-circle"} type="button" data-bs-toggle="collapse" data-bs-target="#collapsePersonalData" aria-expanded="false" aria-controls="collapsePersonalData" onClick={handlePersonalButtonClicked}>
+                        Persönlich
+                    </button>
+                </div>
+
+                <div className="col">
+                    <button className={goalsIsClicked ? "btn rounded-circle activated" : "btn rounded-circle"} type="button" data-bs-toggle="collapse" data-bs-target="#collapseGoalsData" aria-expanded="false" aria-controls="collapseGoalsData" onClick={handleGoalsButtonClicked}>
+                        Ziele
+                    </button>
+                </div>
+
+                <div className="col">
+                    <button className={funFactsIsClicked ? "btn rounded-circle activated" : "btn rounded-circle"} type="button" data-bs-toggle="collapse" data-bs-target="#collapseFunFactsData" aria-expanded="false" aria-controls="collapseFunFactsData" onClick={handleFunFactsButtonClicked}>
+                        Fun facts
+                    </button>
+                </div>
+            </div>
+
+            <div className="row mx-auto px-center-120">
+                <div className="col">
+                    {/* Personal Data*/}
+                    <div className="collapse mt-4" id="collapsePersonalData">
+                        <div className="card card-body about-item text-start rounded-4">
+                            <p><span className="bolder fs-5">Monique Heusinger <br /></span>
+                                37 Jahre, Stier</p>
+                            <p><span className="bolder">Heimat: <br /></span>aufgewachsen in Merseburg; <br />seit 19 Jahren ist Mönchengladbach mein Zuhause</p>
+                            <p><span className="bolder">Familienstatus: <br /></span>"wilde Ehe",<br /> 2 Kinder (Susanna & Jonas)</p>
+                            <p><span className="bolder">Sprachkenntnisse: <br /></span><span className="d-inline-block mt-2">I don't mind a conversation in English.<br /></span>&iquest;<span className="d-inline-block mt-3">Dónde está la biblioteca?<br /></span><span className="d-inline-block mt-3">Мой русский немного заржавел.</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col">
+                    {/* Goals Data*/}
+                    <div className="col">
+                        <div className="collapse mt-4" id="collapseGoalsData">
+                            <div className="card card-body about-item text-start rounded-4">
+                                <p><span className="bolder">Beruflich: <br /></span> Mit Leidenschaft und Begeisterung als Frontend Developer bei der WERTGARANTIE Group durchstarten. Viel Neues lernen!</p>
+                                <p><span className="bolder">Persönlich: <br /></span> Spaß im Leben haben, die Welt sehen. Meine Kinder zu tollen Erwachsenen heranwachsen sehen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col">
+                    {/* Fun facts Data*/}
+                    <div className="col">
+                        <div className="collapse mt-4" id="collapseFunFactsData">
+                            <div className="card card-body about-item text-start rounded-4">
+                                <p><span className="bolder">Heldin:</span> Linda Belcher</p>
+                                <p><span className="bolder">Lieblingstier:</span> Zwerghamster</p>
+                                <p><span className="bolder">Lieblingssong: <br /></span> A Girl Like You - Tame Impala (Like A Version Cover)</p>
+                                <p><span className="bolder">Superkraft: <br /></span> "Crafting MacGyver" <br /> (Gib mir eine geladene Heißklebepistole und ich zaubere dir etwas Wundervolles)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    );
+}
+
+export default About;
