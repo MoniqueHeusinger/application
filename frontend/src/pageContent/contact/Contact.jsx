@@ -45,7 +45,7 @@ const Contact = () => {
                         </div>
 
                         <div class="card-body">
-                            <a href="tel:+4921666746052" className="card-text text-decoration-none">Weizenkamp 5, Mönchengladbach</a>
+                            <a href="https://maps.app.goo.gl/ZgHcsctQCgcqhg597" className="card-text text-decoration-none" target="_blank">Weizenkamp 5, Mönchengladbach</a>
                         </div>
                     </div>
 
