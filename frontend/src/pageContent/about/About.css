@@ -31,3 +31,24 @@
 .bolder {
     font-weight: 600;
 }
+
+@media screen and (max-width: 768px) {
+    #about button {
+        margin-bottom: 1rem;
+        height: 120px;
+        width: 120px;
+        font-size: 1rem;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+
+    #personalColSM,
+    #goalsColSM,
+    #FunFactsColSM {
+        flex: none;
+
+    }
+}
