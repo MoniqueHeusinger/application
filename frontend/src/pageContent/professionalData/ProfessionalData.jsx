@@ -92,7 +92,7 @@ const ProfessionalData = ({ scrollToCertificates }) => {
                                     <div className="row">
                                         <div className="col">
                                             {/* Card Frontend */}
-                                            <div class="card text-center mx-3" id="free2gameCard">
+                                            <div class="card text-center mx-lg-3" id="free2gameCard">
                                                 <img src={frontendAbschlussBild} class="card-img-top" alt="Frontend Abschlussprojekt" />
                                                 <div class="card-body">
                                                     <p class="card-title fw-semibold pt-3 lh-sm">Frontend<br />Abschlussprojekt</p>
@@ -105,7 +105,7 @@ const ProfessionalData = ({ scrollToCertificates }) => {
 
                                         <div className="col">
                                             {/* Card Backend */}
-                                            <div class="card text-center mx-3" id="eventPilotCard">
+                                            <div class="card text-center mx-lg-3" id="eventPilotCard">
                                                 <img src={backendAbschlussBild} class="card-img-top" alt="Backend Abschlussprojekt" />
                                                 <div class="card-body">
                                                     <p class="card-title fw-semibold pt-3 lh-sm">Backend<br />Abschlussprojekt</p>
