@@ -1,7 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import './App.css';
-import Container from "react-bootstrap/esm/Container";
 import Navigation from "./components/navbar/Navigation";
 import Footer from "./components/footer/Footer";
 import Hero from "../src/pageContent/hero/Hero";
@@ -37,13 +36,8 @@ function App() {
     <>
       <BrowserRouter>
         <Navigation />
-        <Container className="mb-5 px-center-120">
-          <Hero scrollToContact={scrollToContact} />
-          <TechStack />
-
-        </Container>
-
-
+        <Hero scrollToContact={scrollToContact} />
+        <TechStack />
         <About />
         <ProfessionalData scrollToCertificates={scrollToCertificates} />
 
