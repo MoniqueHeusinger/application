@@ -79,7 +79,7 @@ const About = () => {
                             <div className="card card-body about-item text-start rounded-4">
                                 <p><span className="bolder">Heldin:</span> Linda Belcher</p>
                                 <p><span className="bolder">Lieblingstier:</span> Zwerghamster</p>
-                                <p><span className="bolder">Lieblingssong: <br /></span> A Girl Like You - Tame Impala (Like A Version Cover)</p>
+                                <p><span className="bolder">Lieblingssong: <br /></span> <a href="https://youtu.be/Wt5DwYAu1ao?feature=shared" target="_blank">A Girl Like You - Tame Impala (Like A Version Cover)</a></p>
                                 <p><span className="bolder">Superkraft: <br /></span> "Crafting MacGyver" <br /> (Gib mir eine geladene Heißklebepistole und ich zaubere dir etwas Wundervolles)</p>
                             </div>
                         </div>

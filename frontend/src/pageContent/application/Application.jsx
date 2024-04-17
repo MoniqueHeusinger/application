@@ -56,7 +56,7 @@ const Application = ({ scrollToContact }) => {
             </div>
             <div className="row mx-auto px-center-120 mt-5 ">
                 <div className="col-12 shadow-box rounded-4 py-4 px-6">
-                    <p>Jetzt ist der Moment gekommen, meinen Lebenstraum zu verfolgen und mich voll und ganz der Webentwicklung zu widmen.</p>
+                    <h6 className="lh-base">Jetzt ist der Moment gekommen, meinen Lebenstraum zu verfolgen und mich voll und ganz der Webentwicklung zu widmen.</h6>
                 </div>
 
             </div>
@@ -81,7 +81,7 @@ const Application = ({ scrollToContact }) => {
             </div>
             <div className="row mx-auto px-center-120 mt-5">
                 <div className="col-12 shadow-box rounded-4 py-4 px-6">
-                    <p>So wie ihr die Produkte eurer Kunden absichert, garantiere ich dir: Mit Entschlossenheit und Kreativität schaffe ich Frontend-Lösungen von bleibendem Wert!</p>
+                    <h6 className="lh-base">So wie ihr die Produkte eurer Kunden absichert, garantiere ich dir: Mit Entschlossenheit und Kreativität schaffe ich Frontend-Lösungen von bleibendem Wert!</h6>
                 </div>
             </div>
 
