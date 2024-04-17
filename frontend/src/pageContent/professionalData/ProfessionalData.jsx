@@ -17,7 +17,7 @@ const ProfessionalData = ({ scrollToCertificates }) => {
 
     return (
         <>
-            <div className="container my-7 px-center-120">
+            <div className="container my-7 px-center-default">
                 <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link px-4 active" id="weiterbildung-tab" data-bs-toggle="tab" data-bs-target="#weiterbildung-tab-pane" type="button" role="tab" aria-controls="weiterbildung-tab-pane" aria-selected="true">Weiterbildung</button>

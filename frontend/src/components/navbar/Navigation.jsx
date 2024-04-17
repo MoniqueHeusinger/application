@@ -50,7 +50,7 @@ const Navigation = () => {
 
             {/* {['md'].map((expand) => (
                 <Navbar key={expand} expand={expand} className="bg-body-tertiary fixed-top mb-4">
-                    <Container fluid className="px-center-120">
+                    <Container fluid className="px-center-default">
                         <Navbar.Brand href="#">MH</Navbar.Brand>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                         <Navbar.Offcanvas

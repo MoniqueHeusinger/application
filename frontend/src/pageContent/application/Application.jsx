@@ -22,7 +22,7 @@ const Application = ({ scrollToContact }) => {
                 </div>
 
             </div>
-            <div className="row mx-auto px-center-120 mt-5">
+            <div className="row mx-auto px-center-default mt-5">
 
                 <div className="col-8 text-start align-self-center">
                     <p><strong>„the time is now“</strong> - nicht nur ein großartiger Songtitel, sondern auch mein Lebensmotto, das perfekt diesen Punkt in meiner beruflichen Laufbahn beschreibt.</p>
@@ -32,7 +32,7 @@ const Application = ({ scrollToContact }) => {
                 </div>
             </div>
 
-            <div className="row mx-auto px-center-120 mt-5 align-items-center">
+            <div className="row mx-auto px-center-default mt-5 align-items-center">
                 <div className="col relative">
                     <img src={studyCoding} alt="Oecotrophologie + Coding = LOVE" className="custom-width-studyCoding" />
                     <img src={heartGIF} alt="" className="hearts-gif" />
@@ -44,7 +44,7 @@ const Application = ({ scrollToContact }) => {
                 </div>
             </div>
 
-            <div className="row mx-auto px-center-120 mt-5 align-items-center">
+            <div className="row mx-auto px-center-default mt-5 align-items-center">
 
                 <div className="col-8 text-start">
                     <p>In den folgenden elf Jahren habe ich als Mitarbeiterin im Qualitätsmanagement bei der real GmbH meinen ausgeprägten Qualitätsanspruch unter Beweis gestellt.</p>
@@ -54,13 +54,13 @@ const Application = ({ scrollToContact }) => {
                     <img src={realBag} alt="" />
                 </div>
             </div>
-            <div className="row mx-auto px-center-120 mt-5 ">
+            <div className="row mx-auto px-center-default mt-5 ">
                 <div className="col-12 shadow-box rounded-4 py-4 px-6">
                     <h6 className="lh-base">Jetzt ist der Moment gekommen, meinen Lebenstraum zu verfolgen und mich voll und ganz der Webentwicklung zu widmen.</h6>
                 </div>
 
             </div>
-            <div className="row mx-auto px-center-120 mt-5 align-items-center">
+            <div className="row mx-auto px-center-default mt-5 align-items-center">
                 <div className="col">
                     <img src={bootcamp} alt="" />
                 </div>
@@ -70,7 +70,7 @@ const Application = ({ scrollToContact }) => {
                 </div>
             </div>
 
-            <div className="row mx-auto px-center-120 mt-5">
+            <div className="row mx-auto px-center-default mt-5">
 
                 <div className="col-8 text-start">
                     <p>Ich freue mich darauf in einem familiären und wertschätzenden Unternehmen wie der WERTGARANTIE Group zu arbeiten und dort in einem unterstützenden Team nicht nur meine Programmier-Fähigkeiten, sondern auch meine Gaming-Skills weiterzuentwickeln - im Feierabend selbstverständlich.</p>
@@ -79,13 +79,13 @@ const Application = ({ scrollToContact }) => {
                     <img src={handshake} alt="" />
                 </div>
             </div>
-            <div className="row mx-auto px-center-120 mt-5">
+            <div className="row mx-auto px-center-default mt-5">
                 <div className="col-12 shadow-box rounded-4 py-4 px-6">
                     <h6 className="lh-base">So wie ihr die Produkte eurer Kunden absichert, garantiere ich dir: Mit Entschlossenheit und Kreativität schaffe ich Frontend-Lösungen von bleibendem Wert!</h6>
                 </div>
             </div>
 
-            <div className="row mx-auto px-center-120 mt-5 flex-column" id="getInContact">
+            <div className="row mx-auto px-center-default mt-5 flex-column" id="getInContact">
                 <h3>Ihr wollt mich persönlich kennenlernen?</h3>
                 <ButtonClassic btnVariant="transparent-dark" buttonText="zu meinen Kontaktdaten" onClick={scrollToContact} />
             </div>

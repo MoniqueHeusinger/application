@@ -16,6 +16,7 @@ import { BrowserRouter, Routes } from "react-router-dom";
 
 
 function App() {
+
   const scrollToContact = () => {
     const contactElement = document.getElementById('contact');
     if (contactElement) {
