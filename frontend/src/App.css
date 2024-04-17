@@ -34,6 +34,11 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  font-weight: 500;
 }
 
 .bg-beige {
@@ -85,4 +90,18 @@ a {
 
 .border-test {
   border: 2px solid red;
+}
+
+/* ===============
+    Media queries
+=================== */
+@media (max-width: 992px) {
+  .px-center-120 {
+    padding-inline: 30px;
+  }
+}
+
+.container-sm,
+.container-md {
+  max-width: 100%;
 }

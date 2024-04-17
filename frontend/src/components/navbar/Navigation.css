@@ -6,13 +6,19 @@ nav {
     background-color: var(--beige-light) !important;
 }
 
-nav>div:first-of-type>a:first-of-type,
-.offcanvas-header>div {
+.navbar-brand,
+.offcanvas-header>a {
     font-family: "WaterBrush";
     font-weight: 500;
     font-size: 1.7rem;
 }
 
-.offcanvas-header>div {
-    font-size: 2rem;
+.navbar-toggler,
+.navbar-toggler:hover {
+    border: 1px solid var(--grey-medium);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    ;
 }
