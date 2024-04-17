@@ -132,6 +132,54 @@
     .basic-logo-light>img {
         max-width: 80px;
     }
+}
+
+@media screen and (max-width: 576px) {
+
+    #tabPaneHSNiederrhein .col {
+        padding: 0 !important;
+    }
+
+    .basic-logo,
+    .basic-logo-light {
+        margin-bottom: 1rem;
+        width: 80px;
+        height: 80px;
+    }
+
+    .basic-logo>img,
+    .basic-logo-light>img {
+        max-width: 60px;
+    }
+
+    .accordion-header>p {
+        margin: 0 auto;
+        padding: 1rem 0 0 0;
+        max-width: fit-content;
+        font-size: 1rem !important;
+    }
+
+    .accordion-button {
+        font-size: 1.1rem !important;
+    }
+
+    #weiterbildungWrapper,
+    #realLogoWrapper,
+    #karrieretutorLogoWrapper,
+    #hsNiederrheinLogoWrapper {
+        flex-grow: 1 !important;
+    }
+
+    #weiterbildungWrapper>div,
+    #realLogoWrapper>div,
+    #karrieretutorLogoWrapper>div,
+    #hsNiederrheinLogoWrapper>div {
+        margin: 0 auto !important;
+    }
+
+    #hsNiederrheinLogo {
+        max-width: 45px;
+    }
 
 
 }

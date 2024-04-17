@@ -22,23 +22,23 @@ const ProfessionalData = ({ scrollToCertificates }) => {
                         <button class="nav-link px-4 active" id="weiterbildung-tab" data-bs-toggle="tab" data-bs-target="#weiterbildung-tab-pane" type="button" role="tab" aria-controls="weiterbildung-tab-pane" aria-selected="true">Weiterbildung</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link px-6 " id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Beruf</button>
+                        <button class="nav-link px-6 " id="beruf-tab" data-bs-toggle="tab" data-bs-target="#beruf-tab-pane" type="button" role="tab" aria-controls="beruf-tab-pane" aria-selected="false">Beruf</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link px-6 " id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Studium</button>
+                        <button class="nav-link px-6 " id="studium-tab" data-bs-toggle="tab" data-bs-target="#tabPaneHSNiederrhein" type="button" role="tab" aria-controls="tabPaneHSNiederrhein" aria-selected="false">Studium</button>
                     </li>
                 </ul>
                 <div class="tab-content text-start border border-top-0 border-style-first p-5" id="professionalDataTabContent">
                     <div class="tab-pane fade show active" id="weiterbildung-tab-pane" role="tabpanel" aria-labelledby="weiterbildung-tab" tabindex="0">
                         <div className="row bg-beige-light p-5 rounded-4">
                             <div className="row">
-                                <div className="col flex-grow-0">
+                                <div className="col flex-grow-0" id="weiterbildungWrapper">
                                     <div className="basic-logo rounded-circle d-flex align-items-center justify-content-center">
                                         <img src={supercodeLogo} alt="" className="weiterbildung-logo" />
                                     </div>
                                 </div>
 
-                                <div className="col p-3 ps-5">
+                                <div className="col p-lg-3 ps-lg-5">
                                     {/* Accordion Bootcamp*/}
                                     <div class="accordion" id="accordionWeiterbildungSuperCode">
                                         <div class="accordion-item">
@@ -89,7 +89,7 @@ const ProfessionalData = ({ scrollToCertificates }) => {
                                         </div>
                                     </div>
 
-                                    <div className="row">
+                                    <div className="row row-gap-5">
                                         <div className="col">
                                             {/* Card Frontend */}
                                             <div class="card text-center mx-lg-3" id="free2gameCard">
@@ -124,13 +124,13 @@ const ProfessionalData = ({ scrollToCertificates }) => {
                         {/* karriere tutor */}
                         <div className="row my-7 bg-beige-light p-5 rounded-4">
                             <div className="row">
-                                <div className="col flex-grow-0">
+                                <div className="col flex-grow-0" id="karrieretutorLogoWrapper">
                                     <div className="basic-logo-light rounded-circle d-flex align-items-center justify-content-center">
                                         <img src={karriereTutorLogo} alt="" className="weiterbildung-logo" />
                                     </div>
                                 </div>
 
-                                <div className="col p-3 ps-5">
+                                <div className="col p-lg-3 ps-lg-5">
                                     {/* Accordion karriere tutor*/}
                                     <div class="accordion" id="accordionWeiterbildungKarrieretutor">
                                         <div class="accordion-item">
@@ -180,17 +180,16 @@ const ProfessionalData = ({ scrollToCertificates }) => {
 
 
                     {/* Beruf */}
-                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-
+                    <div class="tab-pane fade" id="beruf-tab-pane" role="tabpanel" aria-labelledby="beruf-tab" tabindex="0">
                         <div className="row bg-beige-light p-5 rounded-4">
                             <div className="row">
-                                <div className="col flex-grow-0">
+                                <div className="col flex-grow-0" id="realLogoWrapper">
                                     <div className="basic-logo-light rounded-circle d-flex align-items-center justify-content-center">
                                         <img src={realLogo} alt="" className="real-logo" />
                                     </div>
                                 </div>
 
-                                <div className="col p-3 ps-5">
+                                <div className="col p-lg-3 ps-lg-5">
                                     {/* Accordion Beruf*/}
                                     <div class="accordion" id="accordionReal">
                                         <div class="accordion-item">
@@ -227,16 +226,16 @@ const ProfessionalData = ({ scrollToCertificates }) => {
                         </div>
                     </div>
 
-                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                    <div class="tab-pane fade" role="tabpanel" aria-labelledby="studium-tab" tabindex="0" id="tabPaneHSNiederrhein">
                         <div className="row bg-beige-light p-5 rounded-4">
                             <div className="row">
-                                <div className="col flex-grow-0">
+                                <div className="col flex-grow-0" id="hsNiederrheinLogoWrapper">
                                     <div className="basic-logo-light rounded-circle d-flex align-items-center justify-content-center">
-                                        <img src={hsNiederrheinLogo} alt="Hochschule Niederrhein" className="hs-logo" />
+                                        <img src={hsNiederrheinLogo} alt="Hochschule Niederrhein" className="hs-logo" id="hsNiederrheinLogo" />
                                     </div>
                                 </div>
 
-                                <div className="col p-3 ps-5">
+                                <div className="col p-lg-3 ps-lg-5">
                                     {/* Accordion Studium*/}
                                     <div class="accordion" id="accordionStudium">
                                         <div class="accordion-item">
