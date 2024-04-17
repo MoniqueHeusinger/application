@@ -17,7 +17,7 @@ const Certificates = () => {
             <div className="container-full-width bg-beige text-center my-11 pb-5" id="certificates">
                 <h2 className="py-5">Zeugnisse</h2>
 
-                <div className="row mx-auto px-center-120">
+                <div className="row mx-auto px-center-default">
                     <div className="col m-3">
                         <div class="card mb-3 hover-scale">
                             <div class="row g-0 align-items-center">
@@ -58,7 +58,7 @@ const Certificates = () => {
 
                 </div>
 
-                <div className="row mx-auto px-center-120">
+                <div className="row mx-auto px-center-default">
                     <div className="col m-3">
                         <div class="card mb-3 hover-scale">
                             <div class="row g-0 align-items-center">

@@ -56,7 +56,7 @@ a:hover {
 /* =====================
     Margins, paddings
 ======================= */
-.px-center-120 {
+.px-center-default {
   padding-inline: 100px;
 }
 
@@ -92,11 +92,12 @@ a:hover {
   border: 2px solid red;
 }
 
+
 /* ===============
     Media queries
 =================== */
 @media (max-width: 992px) {
-  .px-center-120 {
+  .px-center-default {
     padding-inline: 30px;
   }
 }

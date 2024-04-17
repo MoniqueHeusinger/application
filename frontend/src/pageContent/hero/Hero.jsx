@@ -4,7 +4,7 @@ import "./Hero.css";
 const Hero = ({ scrollToContact }) => {
     return (
         <>
-            <div className="container-fluid px-center-120">
+            <div className="container-fluid px-center-default">
                 <div className="mx-auto mt-250 pt-10 px-5 pb-3 bg-beige rounded-4 relative" gap={3}>
                     <div className="hero-img rounded-circle"></div>
                     <div className="">

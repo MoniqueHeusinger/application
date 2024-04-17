@@ -26,7 +26,7 @@ const About = () => {
         <div className="container-full-width bg-beige text-center my-11 pb-5" id="about">
             <h2 className="py-5">Über mich</h2>
 
-            <div className="row mx-auto px-center-120">
+            <div className="row mx-auto px-center-default">
                 <div className="col">
                     <button className={personalIsClicked ? "btn rounded-circle activated" : "btn rounded-circle"} type="button" data-bs-toggle="collapse" data-bs-target="#collapsePersonalData" aria-expanded="false" aria-controls="collapsePersonalData" onClick={handlePersonalButtonClicked}>
                         Persönlich
@@ -46,7 +46,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="row mx-auto px-center-120">
+            <div className="row mx-auto px-center-default">
                 <div className="col">
                     {/* Personal Data*/}
                     <div className="collapse mt-4" id="collapsePersonalData">

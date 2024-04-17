@@ -16,7 +16,7 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className="row mx-auto px-center-120 my-5 align-items-center ">
+            <div className="row mx-auto px-center-default my-5 align-items-center ">
                 <div className="col">
                     <div class="card flex-row rounded-4 align-items-center my-4 hover-scale">
                         <div className="container rounded-end-0 rounded-4 p-3" id="iconContainerMail">
