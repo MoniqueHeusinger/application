@@ -18,7 +18,7 @@ const ProfessionalData = ({ scrollToCertificates }) => {
     return (
         <>
             <div className="container my-7 px-center-default">
-                <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                <ul class="nav nav-tabs nav-justified" id="professionalDataTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link px-4 active" id="weiterbildung-tab" data-bs-toggle="tab" data-bs-target="#weiterbildung-tab-pane" type="button" role="tab" aria-controls="weiterbildung-tab-pane" aria-selected="true">Weiterbildung</button>
                     </li>
@@ -30,87 +30,100 @@ const ProfessionalData = ({ scrollToCertificates }) => {
                     </li>
 
                 </ul>
-                <div class="tab-content text-start border border-top-0 border-style-first p-5" id="myTabContent">
+                <div class="tab-content text-start border border-top-0 border-style-first p-5" id="professionalDataTabContent">
                     <div class="tab-pane fade show active" id="weiterbildung-tab-pane" role="tabpanel" aria-labelledby="weiterbildung-tab" tabindex="0">
                         <div className="row bg-beige-light p-5 rounded-4">
-                            <div className="col flex-grow-0">
-                                <div className="basic-logo rounded-circle d-flex align-items-center justify-content-center">
-                                    <img src={supercodeLogo} alt="" className="weiterbildung-logo" />
+
+
+                            <div className="row">
+                                <div className="col flex-grow-0">
+                                    <div className="basic-logo rounded-circle d-flex align-items-center justify-content-center">
+                                        <img src={supercodeLogo} alt="" className="weiterbildung-logo" />
+                                    </div>
+                                </div>
+
+                                <div className="col p-3 ps-5">
+
+                                    {/* Accordion Bootcamp*/}
+                                    <div class="accordion" id="accordionWeiterbildungSuperCode">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <p className="fw-light fs-5">09/2023 - 03/2024</p>
+                                                <button class="accordion-button fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelSuperCode-collapseOne" aria-expanded="true" aria-controls="panelSuperCode-collapseOne">
+                                                    Bootcamp Fullstack Web-Development
+                                                </button>
+                                            </h2>
+
+
+
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div className="col p-3 ps-5">
 
-                                {/* Accordion Bootcamp*/}
-                                <div class="accordion" id="accordionWeiterbildungSuperCode">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <p className="fw-light fs-5">09/2023 - 03/2024</p>
-                                            <button class="accordion-button fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelSuperCode-collapseOne" aria-expanded="true" aria-controls="panelSuperCode-collapseOne">
-                                                Bootcamp Fullstack Web-Development
-                                            </button>
-                                        </h2>
-                                        <div id="panelSuperCode-collapseOne" class="accordion-collapse collapse ">
-                                            <div class="accordion-body">
-                                                <p className="text-decoration-underline fw-semibold">Ablauf:</p>
-                                                <p>Vollzeit <br />Täglich Live-Unterricht bis Mittag, im Anschluss  Coding-Challenges sowie kleinere und mittlere Projekte, die ich selbstständig oder im Team bearbeitet habe</p>
 
-                                                <div className="row">
-                                                    <div className="col">
-                                                        <p className="text-decoration-underline fw-semibold">Frontend</p>
-                                                        <p>15 Wochen</p>
-                                                    </div>
+                            <div className="row">
+                                <div id="panelSuperCode-collapseOne" class="accordion-collapse collapse ">
+                                    <div class="accordion-body mt-5">
+                                        <p className="text-decoration-underline fw-semibold">Ablauf:</p>
+                                        <p>Vollzeit <br />Täglich Live-Unterricht bis Mittag, im Anschluss  Coding-Challenges sowie kleinere und mittlere Projekte, die ich selbstständig oder im Team bearbeitet habe</p>
 
-                                                    <div className="col">
-                                                        <p className="text-decoration-underline fw-semibold">Backend</p>
-                                                        <p>12 Wochen</p>
-                                                    </div>
-                                                </div>
-
-                                                <p className="text-decoration-underline fw-semibold">Inhalte u.a.:</p>
-                                                <Container className="container text-center tech-stack-container-small mt-3">
-                                                    <div className="row flex-wrap gap-2 justify-content-between align-items-center">
-                                                        {stackList.map((item, index) => (
-                                                            <span key={index} className="d-block px-4 py-1 col rounded-1">{item}</span>
-                                                        ))}
-
-                                                    </div>
-                                                </Container>
-
-                                                <p className="text-decoration-underline fw-semibold mt-4">Abschluss:</p>
-                                                <div className="row align-items-center mb-4">
-                                                    <div className="col"><p>Web-App als Gruppenprojekt</p></div>
-
-                                                    <div className="col"><ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" onClick={scrollToCertificates} /></div>
-                                                </div>
+                                        <div className="row">
+                                            <div className="col">
+                                                <p className="text-decoration-underline fw-semibold">Frontend</p>
+                                                <p>15 Wochen</p>
                                             </div>
 
-                                            <div className="row">
-                                                <div className="col">
-                                                    {/* Card Frontend */}
-                                                    <div class="card text-center">
-                                                        <img src={frontendAbschlussBild} class="card-img-top" alt="Frontend Abschlussprojekt" />
-                                                        <div class="card-body">
-                                                            <p class="card-title fw-semibold pt-3 lh-sm">Frontend<br />Abschlussprojekt</p>
-                                                            <h5 className="py-2">Free2Game</h5>
-                                                            <p class="card-text">Sammlung kostenloser Online-Games</p>
-                                                            <ButtonClassic additionalClassName="px-5" btnVariant="transparent-dark" buttonText="zum Projekt" onClick={() => { }} url="https://github.com/aktastic/Free2Game" />
-                                                        </div>
-                                                    </div>
+                                            <div className="col">
+                                                <p className="text-decoration-underline fw-semibold">Backend</p>
+                                                <p>12 Wochen</p>
+                                            </div>
+                                        </div>
+
+                                        <p className="text-decoration-underline fw-semibold">Inhalte u.a.:</p>
+                                        <Container className="container text-center tech-stack-container-small mt-3">
+                                            <div className="row flex-wrap gap-2 justify-content-between align-items-center">
+                                                {stackList.map((item, index) => (
+                                                    <span key={index} className="d-block px-4 py-1 col rounded-1">{item}</span>
+                                                ))}
+
+                                            </div>
+                                        </Container>
+
+                                        <p className="text-decoration-underline fw-semibold mt-4">Abschluss:</p>
+                                        <div className="row align-items-center mb-4">
+                                            <div className="col"><p>Web-App als Gruppenprojekt</p></div>
+
+                                            <div className="col"><ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" onClick={scrollToCertificates} /></div>
+                                        </div>
+                                    </div>
+
+                                    <div className="row">
+                                        <div className="col">
+                                            {/* Card Frontend */}
+                                            <div class="card text-center">
+                                                <img src={frontendAbschlussBild} class="card-img-top" alt="Frontend Abschlussprojekt" />
+                                                <div class="card-body">
+                                                    <p class="card-title fw-semibold pt-3 lh-sm">Frontend<br />Abschlussprojekt</p>
+                                                    <h5 className="py-2">Free2Game</h5>
+                                                    <p class="card-text">Sammlung kostenloser Online-Games</p>
+                                                    <ButtonClassic additionalClassName="px-5" btnVariant="transparent-dark" buttonText="zum Projekt" onClick={() => { }} url="https://github.com/aktastic/Free2Game" />
                                                 </div>
+                                            </div>
+                                        </div>
 
-                                                <div className="col">
-                                                    {/* Card Backend */}
-                                                    <div class="card text-center">
-                                                        <img src={backendAbschlussBild} class="card-img-top" alt="Backend Abschlussprojekt" />
-                                                        <div class="card-body">
-                                                            <p class="card-title fw-semibold pt-3 lh-sm">Backend<br />Abschlussprojekt</p>
-                                                            <h5 className="py-2">EventPilot</h5>
-                                                            <p class="card-text">Events in der Nähe finden und Veröffentlichen von Events </p>
-                                                            <ButtonClassic additionalClassName="px-5" btnVariant="transparent-dark" buttonText="zum Projekt" onClick={() => { }} url="https://eventpilot.onrender.com" />
+                                        <div className="col">
+                                            {/* Card Backend */}
+                                            <div class="card text-center">
+                                                <img src={backendAbschlussBild} class="card-img-top" alt="Backend Abschlussprojekt" />
+                                                <div class="card-body">
+                                                    <p class="card-title fw-semibold pt-3 lh-sm">Backend<br />Abschlussprojekt</p>
+                                                    <h5 className="py-2">EventPilot</h5>
+                                                    <p class="card-text">Events in der Nähe finden und Veröffentlichen von Events </p>
+                                                    <ButtonClassic additionalClassName="px-5" btnVariant="transparent-dark" buttonText="zum Projekt" onClick={() => { }} url="https://eventpilot.onrender.com" />
 
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

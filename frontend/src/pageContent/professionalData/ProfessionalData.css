@@ -106,3 +106,27 @@
 .card {
     box-shadow: 0 4px 8px #00000032;
 }
+
+
+@media screen and (max-width: 992px) {
+    #professionalDataTabContent {
+        padding: 2rem !important;
+    }
+
+    .tab-pane>div {
+        padding: 2rem 1rem !important;
+    }
+
+    .basic-logo,
+    .basic-logo-light {
+        width: 120px;
+        height: 120px;
+    }
+
+    .basic-logo>img,
+    .basic-logo-light>img {
+        max-width: 80px;
+    }
+
+
+}
