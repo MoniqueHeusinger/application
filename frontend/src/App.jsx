@@ -38,7 +38,7 @@ function App() {
       <BrowserRouter>
         <Navigation />
         <Container className="mb-5 px-center-120">
-          <Hero />
+          <Hero scrollToContact={scrollToContact} />
           <TechStack />
 
         </Container>
