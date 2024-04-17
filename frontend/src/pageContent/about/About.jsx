@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import "./About.css";
-import Container from "react-bootstrap/esm/Container";
 
 const About = () => {
     const [personalIsClicked, setPersonalIsClicked] = useState(false);
@@ -40,8 +39,6 @@ const About = () => {
     return (
         <div className="container-full-width bg-beige text-center my-11 pb-5" id="about">
             <h2 className="py-5">Über mich</h2>
-
-
 
             {isSmallScreen && (<>
                 <div className="col" id="personalColSM">
@@ -161,34 +158,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-
             </>)}
-
-
-
-
-
-            {/* <div className="row mx-auto px-center-default">
-                <div className="col">
-                    <button className={personalIsClicked ? "btn rounded-circle activated" : "btn rounded-circle"} type="button" data-bs-toggle="collapse" data-bs-target="#collapsePersonalData" aria-expanded="false" aria-controls="collapsePersonalData" onClick={handlePersonalButtonClicked}>
-                        Persönlich
-                    </button>
-                </div>
-
-                <div className="col">
-                    <button className={goalsIsClicked ? "btn rounded-circle activated" : "btn rounded-circle"} type="button" data-bs-toggle="collapse" data-bs-target="#collapseGoalsData" aria-expanded="false" aria-controls="collapseGoalsData" onClick={handleGoalsButtonClicked}>
-                        Ziele
-                    </button>
-                </div>
-
-                <div className="col">
-                    <button className={funFactsIsClicked ? "btn rounded-circle activated" : "btn rounded-circle"} type="button" data-bs-toggle="collapse" data-bs-target="#collapseFunFactsData" aria-expanded="false" aria-controls="collapseFunFactsData" onClick={handleFunFactsButtonClicked}>
-                        Fun facts
-                    </button>
-                </div>
-            </div> */}
-
-
         </div>
 
     );
