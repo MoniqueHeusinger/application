@@ -1,6 +1,5 @@
 import "./ProfessionalData.css";
 import ButtonClassic from "../../components/button/ButtonClassic";
-import Container from "react-bootstrap/esm/Container";
 import frontendAbschlussBild from "../../assets/img/frontend-abschluss-bild.png";
 import backendAbschlussBild from "../../assets/img/eventpilot-cover.png";
 import supercodeLogo from "../../assets/img/supercode-logo.svg";
@@ -28,13 +27,10 @@ const ProfessionalData = ({ scrollToCertificates }) => {
                     <li class="nav-item" role="presentation">
                         <button class="nav-link px-6 " id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Studium</button>
                     </li>
-
                 </ul>
                 <div class="tab-content text-start border border-top-0 border-style-first p-5" id="professionalDataTabContent">
                     <div class="tab-pane fade show active" id="weiterbildung-tab-pane" role="tabpanel" aria-labelledby="weiterbildung-tab" tabindex="0">
                         <div className="row bg-beige-light p-5 rounded-4">
-
-
                             <div className="row">
                                 <div className="col flex-grow-0">
                                     <div className="basic-logo rounded-circle d-flex align-items-center justify-content-center">
@@ -43,7 +39,6 @@ const ProfessionalData = ({ scrollToCertificates }) => {
                                 </div>
 
                                 <div className="col p-3 ps-5">
-
                                     {/* Accordion Bootcamp*/}
                                     <div class="accordion" id="accordionWeiterbildungSuperCode">
                                         <div class="accordion-item">
@@ -53,16 +48,10 @@ const ProfessionalData = ({ scrollToCertificates }) => {
                                                     Bootcamp Fullstack Web-Development
                                                 </button>
                                             </h2>
-
-
-
-
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-
 
                             <div className="row">
                                 <div id="panelSuperCode-collapseOne" class="accordion-collapse collapse ">
@@ -83,14 +72,14 @@ const ProfessionalData = ({ scrollToCertificates }) => {
                                         </div>
 
                                         <p className="text-decoration-underline fw-semibold">Inhalte u.a.:</p>
-                                        <Container className="container text-center tech-stack-container-small mt-3">
+                                        <div className="container text-center tech-stack-container-small mt-3">
                                             <div className="row flex-wrap gap-2 justify-content-between align-items-center">
                                                 {stackList.map((item, index) => (
                                                     <span key={index} className="d-block px-4 py-1 col rounded-1">{item}</span>
                                                 ))}
 
                                             </div>
-                                        </Container>
+                                        </div>
 
                                         <p className="text-decoration-underline fw-semibold mt-4">Abschluss:</p>
                                         <div className="row align-items-center mb-4">
@@ -103,7 +92,7 @@ const ProfessionalData = ({ scrollToCertificates }) => {
                                     <div className="row">
                                         <div className="col">
                                             {/* Card Frontend */}
-                                            <div class="card text-center">
+                                            <div class="card text-center mx-3" id="free2gameCard">
                                                 <img src={frontendAbschlussBild} class="card-img-top" alt="Frontend Abschlussprojekt" />
                                                 <div class="card-body">
                                                     <p class="card-title fw-semibold pt-3 lh-sm">Frontend<br />Abschlussprojekt</p>
@@ -116,7 +105,7 @@ const ProfessionalData = ({ scrollToCertificates }) => {
 
                                         <div className="col">
                                             {/* Card Backend */}
-                                            <div class="card text-center">
+                                            <div class="card text-center mx-3" id="eventPilotCard">
                                                 <img src={backendAbschlussBild} class="card-img-top" alt="Backend Abschlussprojekt" />
                                                 <div class="card-body">
                                                     <p class="card-title fw-semibold pt-3 lh-sm">Backend<br />Abschlussprojekt</p>
@@ -134,52 +123,54 @@ const ProfessionalData = ({ scrollToCertificates }) => {
 
                         {/* karriere tutor */}
                         <div className="row my-7 bg-beige-light p-5 rounded-4">
-                            <div className="col flex-grow-0">
-                                <div className="basic-logo-light rounded-circle d-flex align-items-center justify-content-center">
-                                    <img src={karriereTutorLogo} alt="" className="weiterbildung-logo" />
+                            <div className="row">
+                                <div className="col flex-grow-0">
+                                    <div className="basic-logo-light rounded-circle d-flex align-items-center justify-content-center">
+                                        <img src={karriereTutorLogo} alt="" className="weiterbildung-logo" />
+                                    </div>
+                                </div>
+
+                                <div className="col p-3 ps-5">
+                                    {/* Accordion karriere tutor*/}
+                                    <div class="accordion" id="accordionWeiterbildungKarrieretutor">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <p className="fw-light fs-5">05/2023 - 07/2023</p>
+                                                <button class="accordion-button fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelKarriereTutor-collapseOne" aria-expanded="true" aria-controls="panelKarriereTutor-collapseOne">
+                                                    HTML- & CSS-Kurs
+                                                </button>
+                                            </h2>
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div className="col p-3 ps-5">
-
-                                {/* Accordion karriere tutor*/}
-                                <div class="accordion" id="accordionWeiterbildungKarrieretutor">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <p className="fw-light fs-5">05/2023 - 07/2023</p>
-                                            <button class="accordion-button fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelKarriereTutor-collapseOne" aria-expanded="true" aria-controls="panelKarriereTutor-collapseOne">
-                                                HTML- & CSS-Kurs
-                                            </button>
-                                        </h2>
-                                        <div id="panelKarriereTutor-collapseOne" class="accordion-collapse collapse">
-                                            <div class="accordion-body">
-                                                <p className="text-decoration-underline fw-semibold">Ablauf:</p>
-                                                <p>Vollzeit <br />Zwei Mal wöchentlich Live-Unterricht, den Rest der Woche Selbststudium und kleine Projekte, die ich selbstständig bearbeitet habe</p>
-
-                                                <div className="row">
-                                                    <div className="col">
-                                                        <p className="text-decoration-underline fw-semibold">Dauer</p>
-                                                        <p>8 Wochen</p>
-                                                    </div>
-                                                </div>
-
-                                                <p className="text-decoration-underline fw-semibold">Inhalte u.a.:</p>
-                                                <Container className="container text-center tech-stack-container-small m-0">
-                                                    <div className="row flex-wrap gap-2 justify-content-between">
-                                                        {stackListHtmlCss.map((item, index) => (
-                                                            <span key={index} className="d-block px-4 py-1 col rounded-1">{item}</span>
-                                                        ))}
-
-                                                    </div>
-                                                </Container>
-
-                                                <p className="text-decoration-underline fw-semibold mt-4">Abschluss:</p>
-                                                <div className="row align-items-center">
-                                                    <div className="col"><p>Prüfung (Note: 1,0)</p></div>
-
-                                                    <div className="col"><ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" onClick={scrollToCertificates} /></div>
-                                                </div>
+                            <div className="row">
+                                <div id="panelKarriereTutor-collapseOne" class="accordion-collapse collapse">
+                                    <div class="accordion-body mt-5">
+                                        <p className="text-decoration-underline fw-semibold">Ablauf:</p>
+                                        <p>Vollzeit <br />Zwei Mal wöchentlich Live-Unterricht, den Rest der Woche Selbststudium und kleine Projekte, die ich selbstständig bearbeitet habe</p>
+                                        <div className="row">
+                                            <div className="col">
+                                                <p className="text-decoration-underline fw-semibold">Dauer</p>
+                                                <p>8 Wochen</p>
                                             </div>
+                                        </div>
+                                        <p className="text-decoration-underline fw-semibold">Inhalte u.a.:</p>
+                                        <div className="container text-center tech-stack-container-small m-0">
+                                            <div className="row flex-wrap gap-2 justify-content-between">
+                                                {stackListHtmlCss.map((item, index) => (
+                                                    <span key={index} className="d-block px-4 py-1 col rounded-1">{item}</span>
+                                                ))}
+
+                                            </div>
+                                        </div>
+                                        <p className="text-decoration-underline fw-semibold mt-4">Abschluss:</p>
+                                        <div className="row align-items-center">
+                                            <div className="col"><p>Prüfung (Note: 1,0)</p></div>
+
+                                            <div className="col"><ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" onClick={scrollToCertificates} /></div>
                                         </div>
                                     </div>
                                 </div>
@@ -187,46 +178,49 @@ const ProfessionalData = ({ scrollToCertificates }) => {
                         </div>
                     </div>
 
+
                     {/* Beruf */}
                     <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
                         <div className="row bg-beige-light p-5 rounded-4">
-                            <div className="col flex-grow-0">
-                                <div className="basic-logo-light rounded-circle d-flex align-items-center justify-content-center">
-                                    <img src={realLogo} alt="" className="real-logo" />
+                            <div className="row">
+                                <div className="col flex-grow-0">
+                                    <div className="basic-logo-light rounded-circle d-flex align-items-center justify-content-center">
+                                        <img src={realLogo} alt="" className="real-logo" />
+                                    </div>
+                                </div>
+
+                                <div className="col p-3 ps-5">
+                                    {/* Accordion Beruf*/}
+                                    <div class="accordion" id="accordionReal">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <p className="fw-light fs-5">10/2011 - 06/2022</p>
+                                                <button class="accordion-button fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelReal-collapseOne" aria-expanded="true" aria-controls="panelReal-collapseOne">
+                                                    Mitarbeiterin Qualitätsmanagement
+                                                </button>
+                                            </h2>
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div className="col p-3 ps-5">
-
-                                {/* Accordion Beruf*/}
-                                <div class="accordion" id="accordionReal">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <p className="fw-light fs-5">10/2011 - 06/2022</p>
-                                            <button class="accordion-button fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelReal-collapseOne" aria-expanded="true" aria-controls="panelReal-collapseOne">
-                                                Mitarbeiterin Qualitätsmanagement
-                                            </button>
-                                        </h2>
-                                        <div id="panelReal-collapseOne" class="accordion-collapse collapse ">
-                                            <div class="accordion-body">
-
-                                                <p className="fw-regular fs-5 mb-5">real GmbH, Düsseldorf <br />Zentralverwaltung</p>
-
-                                                <p className="text-decoration-underline fw-semibold">Aufgaben u.a.:</p>
-                                                <Container className="container text-center tech-stack-container-small my-3">
+                            <div className="row">
+                                <div id="panelReal-collapseOne" class="accordion-collapse collapse ">
+                                    <div class="accordion-body mt-5">
+                                        <p className="fw-regular fs-5 mb-5">real GmbH, Düsseldorf <br />Zentralverwaltung</p>
+                                        <p className="text-decoration-underline fw-semibold">Aufgaben u.a.:</p>
+                                        <div className="container text-center tech-stack-container-small my-3">
+                                            <div className="row flex-wrap gap-2 justify-content-between">
+                                                {tasksQM.map((item, index) => (
                                                     <div className="row flex-wrap gap-2 justify-content-between">
-                                                        {tasksQM.map((item, index) => (
-                                                            <div className="row flex-wrap gap-2 justify-content-between">
-                                                                <p key={index} className="px-4 py-2 flex-grow-1 m-0">{item}</p>
-                                                            </div>
-                                                        ))}
-
+                                                        <p key={index} className="px-4 py-2 flex-grow-1 m-0">{item}</p>
                                                     </div>
-                                                </Container>
-
-                                                <ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" onClick={scrollToCertificates} />
+                                                ))}
                                             </div>
                                         </div>
+                                        <ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" onClick={scrollToCertificates} />
                                     </div>
                                 </div>
                             </div>
@@ -235,39 +229,42 @@ const ProfessionalData = ({ scrollToCertificates }) => {
 
                     <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
                         <div className="row bg-beige-light p-5 rounded-4">
-                            <div className="col flex-grow-0">
-                                <div className="basic-logo-light rounded-circle d-flex align-items-center justify-content-center">
-                                    <img src={hsNiederrheinLogo} alt="Hochschule Niederrhein" className="hs-logo" />
+                            <div className="row">
+                                <div className="col flex-grow-0">
+                                    <div className="basic-logo-light rounded-circle d-flex align-items-center justify-content-center">
+                                        <img src={hsNiederrheinLogo} alt="Hochschule Niederrhein" className="hs-logo" />
+                                    </div>
+                                </div>
+
+                                <div className="col p-3 ps-5">
+                                    {/* Accordion Studium*/}
+                                    <div class="accordion" id="accordionStudium">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <p className="fw-light fs-5">09/2005 - 08/2011</p>
+                                                <button class="accordion-button fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelStudium-collapseOne" aria-expanded="true" aria-controls="panelStudium-collapseOne">
+                                                    Diplom Oecotrophologie (FH)
+                                                </button>
+                                            </h2>
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div className="col p-3 ps-5">
+                            <div className="row">
+                                <div id="panelStudium-collapseOne" class="accordion-collapse collapse ">
+                                    <div class="accordion-body mt-5">
+                                        <p className="fw-regular fs-5 mb-5">Hochschule Niederrhein, Mönchengladbach</p>
+                                        <p className="text-decoration-underline fw-semibold">Diplomarbeit:</p>
+                                        <p>"Entwicklung einer
+                                            beratenden und informierenden
+                                            Website für Unternehmen zum
+                                            Thema 'Arbeitsanalyse-verfahren'"</p>
+                                        <p>(Webseite entwickelt mit HTML, CSS, PHP, MySQL)</p>
+                                        <p>Note: gut</p>
 
-                                {/* Accordion Studium*/}
-                                <div class="accordion" id="accordionStudium">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <p className="fw-light fs-5">09/2005 - 08/2011</p>
-                                            <button class="accordion-button fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelStudium-collapseOne" aria-expanded="true" aria-controls="panelStudium-collapseOne">
-                                                Diplom Oecotrophologie (FH)
-                                            </button>
-                                        </h2>
-                                        <div id="panelStudium-collapseOne" class="accordion-collapse collapse ">
-                                            <div class="accordion-body">
-
-                                                <p className="fw-regular fs-5 mb-5">Hochschule Niederrhein, Mönchengladbach</p>
-
-                                                <p className="text-decoration-underline fw-semibold">Diplomarbeit:</p>
-                                                <p>"Entwicklung einer
-                                                    beratenden und informierenden
-                                                    Website für Unternehmen zum
-                                                    Thema 'Arbeitsanalyse-verfahren'"</p>
-                                                <p>(Webseite entwickelt mit HTML, CSS, PHP, MySQL)</p>
-                                                <p>Note: gut</p>
-
-                                                <ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" onClick={scrollToCertificates} />
-                                            </div>
-                                        </div>
+                                        <ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" onClick={scrollToCertificates} />
                                     </div>
                                 </div>
                             </div>
