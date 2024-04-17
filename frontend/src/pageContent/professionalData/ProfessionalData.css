@@ -103,6 +103,11 @@
     flex-grow: 1;
 }
 
+#free2gameCard,
+#eventPilotCard {
+    height: 100%;
+}
+
 .card {
     box-shadow: 0 4px 8px #00000032;
 }
