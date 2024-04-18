@@ -24,3 +24,10 @@
     transform: scale(110%);
     transition: 0.4s;
 }
+
+@media screen and (max-width: 450px) {
+    .map-sm {
+        max-width: 80%;
+        max-height: 80%;
+    }
+}
