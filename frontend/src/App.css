@@ -96,13 +96,31 @@ a:hover {
 /* ===============
     Media queries
 =================== */
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .px-center-default {
     padding-inline: 30px;
   }
+
+  .container-sm,
+  .container-md {
+    max-width: 100%;
+  }
 }
 
-.container-sm,
-.container-md {
-  max-width: 100%;
+
+
+@media screen and (max-width: 768px) {
+  .px-md-4 {
+    padding-inline: 2rem;
+  }
+
+  .logo-sm {
+    max-width: 45px;
+    max-height: 45px;
+  }
+
+  .map-size-sm {
+    max-width: 80%;
+    max-height: 80%;
+  }
 }
