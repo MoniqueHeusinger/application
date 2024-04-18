@@ -54,7 +54,7 @@ const About = () => {
                                 37 Jahre, Stier</p>
                             <p><span className="bolder">Heimat: <br /></span>aufgewachsen in Merseburg; <br />seit 19 Jahren ist Mönchengladbach mein Zuhause</p>
                             <p><span className="bolder">Familienstatus: <br /></span>"wilde Ehe",<br /> 2 Kinder (Susanna & Jonas)</p>
-                            <p><span className="bolder">Sprachkenntnisse: <br /></span><span className="d-inline-block mt-2">I don't mind a conversation in English.<br /></span>&iquest;<span className="d-inline-block mt-3">Dónde está la biblioteca?<br /></span><span className="d-inline-block mt-3">Мой русский немного заржавел.</span></p>
+                            <p><span className="bolder">Sprachkenntnisse: <br /></span><span className="d-inline-block mt-2">I don't mind a conversation in English.<br /></span><span className="d-inline-block mt-3">&iquest;Dónde está la biblioteca?<br /></span><span className="d-inline-block mt-3">Мой русский немного заржавел.</span></p>
                         </div>
                     </div>
                 </div>
