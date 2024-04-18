@@ -17,3 +17,13 @@
     margin: 0 auto;
     width: fit-content;
 }
+
+@media screen and (max-width: 992px) {
+    .custom-width-studyCoding {
+        max-width: 200px;
+    }
+
+    .hearts-gif {
+        max-width: 60px;
+    }
+}
