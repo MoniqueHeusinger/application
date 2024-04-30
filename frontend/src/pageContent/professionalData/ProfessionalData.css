@@ -13,10 +13,6 @@
     border-radius: 0 0 19px 19px;
 }
 
-.flex-grow-0 {
-    flex-grow: 0;
-}
-
 .basic-logo {
     width: 144px;
     height: 144px;
@@ -60,11 +56,7 @@
 
 .tech-stack-container-small>div {
     width: fit-content;
-    font-weight: 400;
-    font-size: 0.8rem;
     color: var(--text-medium);
-    text-transform: uppercase;
-
 }
 
 .tech-stack-container-small div span {
@@ -88,24 +80,6 @@
 =========================*/
 .card>img {
     height: 150px;
-}
-
-.accordion-item .card {
-    height: 100%;
-}
-
-.accordion-item .card-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.accordion-item .card-body>p:nth-of-type(2) {
-    flex-grow: 1;
-}
-
-#free2gameCard,
-#eventPilotCard {
-    height: 100%;
 }
 
 .card {
@@ -136,9 +110,9 @@
 
 @media screen and (max-width: 576px) {
 
-    #tabPaneHSNiederrhein .col {
+    /* #tabPaneHSNiederrhein .col {
         padding: 0 !important;
-    }
+    } */
 
     .basic-logo,
     .basic-logo-light {

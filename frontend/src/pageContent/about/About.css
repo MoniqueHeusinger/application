@@ -2,7 +2,6 @@
     height: 200px;
     width: 200px;
     background-color: var(--beige-light);
-
     box-shadow: 1px 4px 6px 3px #0000002a;
     color: var(--grey-medium);
     font-size: 1.5rem;
@@ -27,11 +26,6 @@
     width: fit-content;
     font-size: .9rem;
 }
-
-.bolder {
-    font-weight: 600;
-}
-
 
 @media screen and (max-width: 768px) {
     #about button {

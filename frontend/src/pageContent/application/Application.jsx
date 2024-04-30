@@ -11,7 +11,7 @@ const Application = ({ scrollToContact }) => {
 
     return (
         <>
-            <div className="container-full-width bg-beige mt-11 pb-5" id="application">
+            <div className="bg-beige mt-11 pb-5" id="application">
                 <div className="row">
                     <h2 className="pt-5">Bewerbung</h2>
                 </div>

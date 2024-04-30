@@ -14,7 +14,7 @@ const Certificates = () => {
 
     return (
         <>
-            <div className="container-full-width bg-beige text-center my-11 pb-5" id="certificates">
+            <div className="bg-beige text-center my-11 pb-5" id="certificates">
                 <h2 className="py-5">Zeugnisse</h2>
 
                 <div className="row mx-auto px-center-default">

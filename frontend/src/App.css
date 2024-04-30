@@ -31,16 +31,6 @@ body {
   text-align: center;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-
-a:hover {
-  font-weight: 500;
-}
-
 .bg-beige {
   background-color: var(--beige);
 }
@@ -51,6 +41,23 @@ a:hover {
 
 .relative {
   position: relative;
+}
+
+/* =====================
+    Text styles
+======================= */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  font-weight: 500;
+}
+
+.fs-7 {
+  font-size: 0.8rem;
 }
 
 /* =====================

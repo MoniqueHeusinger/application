@@ -11,14 +11,5 @@
     top: -22%;
     left: 50%;
     transform: translateX(-50%);
-    /* border-radius: 50%; */
     z-index: 1;
-}
-
-/* ===============
-    Hero text 
-=============== */
-
-.font-thin {
-    font-weight: 300;
 }
