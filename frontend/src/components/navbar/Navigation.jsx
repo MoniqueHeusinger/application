@@ -34,9 +34,9 @@ const Navigation = () => {
                             <li class="nav-item">
                                 <a class="nav-link px-4 py-3" onClick={(event) => scrollToArea('application', event)} aria-current="page" data-bs-dismiss="offcanvas">Bewerbung</a>
                             </li>
-                            <li class="nav-item">
+                            {/* <li class="nav-item">
                                 <a class="nav-link px-4 py-3" onClick={(event) => scrollToArea('certificates', event)} aria-current="page" data-bs-dismiss="offcanvas">Zeugnisse</a>
-                            </li>
+                            </li> */}
                             <li class="nav-item">
                                 <a class="nav-link px-4 py-3" onClick={(event) => scrollToArea('contact', event)} aria-current="page" data-bs-dismiss="offcanvas">Kontakt</a>
                             </li>

@@ -85,7 +85,7 @@ const ProfessionalData = ({ scrollToCertificates }) => {
                                         <div className="row align-items-center mb-4">
                                             <div className="col"><p>Web-App als Gruppenprojekt</p></div>
 
-                                            <div className="col"><ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" onClick={scrollToCertificates} /></div>
+                                            {/* <div className="col"><ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" onClick={scrollToCertificates} /></div> */}
                                         </div>
                                     </div>
 
@@ -170,7 +170,7 @@ const ProfessionalData = ({ scrollToCertificates }) => {
                                         <div className="row align-items-center">
                                             <div className="col"><p>Prüfung (Note: 1,0)</p></div>
 
-                                            <div className="col"><ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" onClick={scrollToCertificates} /></div>
+                                            {/* <div className="col"><ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" onClick={scrollToCertificates} /></div> */}
                                         </div>
                                     </div>
                                 </div>
@@ -219,7 +219,7 @@ const ProfessionalData = ({ scrollToCertificates }) => {
                                                 ))}
                                             </div>
                                         </div>
-                                        <ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" onClick={scrollToCertificates} />
+                                        {/* <ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" onClick={scrollToCertificates} /> */}
                                     </div>
                                 </div>
                             </div>
@@ -263,7 +263,7 @@ const ProfessionalData = ({ scrollToCertificates }) => {
                                         <p>(Webseite entwickelt mit HTML, CSS, PHP, MySQL)</p>
                                         <p>Note: gut</p>
 
-                                        <ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" onClick={scrollToCertificates} />
+                                        {/* <ButtonClassic buttonText="zum Zeugnis" btnVariant="transparent-dark" onClick={scrollToCertificates} /> */}
                                     </div>
                                 </div>
                             </div>

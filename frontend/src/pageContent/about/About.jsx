@@ -70,8 +70,9 @@ const About = () => {
                 <div className="col">
                     <div className="collapse mt-2 mb-5 px-4" id="collapseGoalsData">
                         <div className="card card-body about-item text-start rounded-4">
-                            <p><span className="fw-semibold">Beruflich: <br /></span> Mit Leidenschaft und Begeisterung als Frontend Developer bei der WERTGARANTIE Group durchstarten. Viel Neues lernen!</p>
-                            <p><span className="fw-semibold">Persönlich: <br /></span> Spaß im Leben haben, die Welt sehen. Meine Kinder zu tollen Erwachsenen heranwachsen sehen.</p>
+                            <p><span className="fw-semibold">Beruflich: <br /></span> Mit Leidenschaft und Begeisterung als Frontend Developer durchstarten und dabei meine Kreativität einsetzen.</p>
+                            <p>Mich mit immer neuen, spannenden Themen auseinander setzen.</p>
+                            <p><span className="fw-semibold">Persönlich: <br /></span> Spaß im Leben haben, die Welt sehen. <br /> Meine Kinder zu tollen Erwachsenen heranwachsen sehen.</p>
                         </div>
                     </div>
                 </div>
@@ -137,8 +138,9 @@ const About = () => {
                         <div className="col">
                             <div className="collapse mt-4" id="collapseGoalsData">
                                 <div className="card card-body about-item text-start rounded-4">
-                                    <p><span className="fw-semibold">Beruflich: <br /></span> Mit Leidenschaft und Begeisterung als Frontend Developer bei der WERTGARANTIE Group durchstarten. Viel Neues lernen!</p>
-                                    <p><span className="fw-semibold">Persönlich: <br /></span> Spaß im Leben haben, die Welt sehen. Meine Kinder zu tollen Erwachsenen heranwachsen sehen.</p>
+                                    <p><span className="fw-semibold">Beruflich: <br /></span> Mit Leidenschaft und Begeisterung als Frontend Developer durchstarten und dabei meine Kreativität einsetzen.</p>
+                                    <p>Mich mit immer neuen, spannenden Themen auseinander setzen.</p>
+                                    <p><span className="fw-semibold">Persönlich: <br /></span> Spaß im Leben haben, die Welt sehen. <br /> Meine Kinder zu tollen Erwachsenen heranwachsen sehen.</p>
                                 </div>
                             </div>
                         </div>
