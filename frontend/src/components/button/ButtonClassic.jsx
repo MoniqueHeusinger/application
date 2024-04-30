@@ -18,7 +18,7 @@ const ButtonClassic = ({ buttonText, btnVariant, onClick, url, additionalClassNa
     };
 
     return (
-        <Button className={`border border-1 rounded-pill my-2 px-6 py-2 ${additionalClassName}`} variant={btnVariant} onClick={handleBtnClick} data-bs-toggle={dataBsToggle} data-bs-target={dataBsTarget} data-bs-dismiss={dataBsDismiss}>{buttonText}</Button>
+        <Button className={`border border-1 rounded-pill mx-auto my-2 px-6 py-2 ${additionalClassName}`} variant={btnVariant} onClick={handleBtnClick} data-bs-toggle={dataBsToggle} data-bs-target={dataBsTarget} data-bs-dismiss={dataBsDismiss}>{buttonText}</Button>
     );
 }
 

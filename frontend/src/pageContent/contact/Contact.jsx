@@ -10,7 +10,7 @@ import discordLogo from "../../assets/img/discord-logo.png";
 const Contact = () => {
     return (
         <>
-            <div className="container-full-width bg-beige mt-11 pb-5" id="contact">
+            <div className="bg-beige mt-11 pb-5" id="contact">
                 <div className="row">
                     <h2 className="pt-5">Kontakt</h2>
                 </div>

@@ -73,7 +73,7 @@ const ProfessionalData = ({ scrollToCertificates }) => {
 
                                         <p className="text-decoration-underline fw-semibold">Inhalte u.a.:</p>
                                         <div className="container text-center tech-stack-container-small mt-3">
-                                            <div className="row flex-wrap gap-2 justify-content-between align-items-center">
+                                            <div className="row flex-wrap gap-2 justify-content-between align-items-center  fs-7 text-uppercase">
                                                 {stackList.map((item, index) => (
                                                     <span key={index} className="d-block px-4 py-1 col rounded-1">{item}</span>
                                                 ))}
@@ -92,12 +92,12 @@ const ProfessionalData = ({ scrollToCertificates }) => {
                                     <div className="row row-gap-5">
                                         <div className="col">
                                             {/* Card Frontend */}
-                                            <div class="card text-center mx-lg-3" id="free2gameCard">
+                                            <div class="card text-center mx-lg-3 h-100" id="free2gameCard">
                                                 <img src={frontendAbschlussBild} class="card-img-top" alt="Frontend Abschlussprojekt" />
-                                                <div class="card-body">
+                                                <div class="card-body d-flex flex-column">
                                                     <p class="card-title fw-semibold pt-3 lh-sm">Frontend<br />Abschlussprojekt</p>
                                                     <h5 className="py-2">Free2Game</h5>
-                                                    <p class="card-text">Sammlung kostenloser Online-Games</p>
+                                                    <p class="card-text flex-grow-1">Sammlung kostenloser Online-Games</p>
                                                     <ButtonClassic additionalClassName="px-5" btnVariant="transparent-dark" buttonText="zum Projekt" onClick={() => { }} url="https://github.com/aktastic/Free2Game" />
                                                 </div>
                                             </div>
@@ -105,9 +105,9 @@ const ProfessionalData = ({ scrollToCertificates }) => {
 
                                         <div className="col">
                                             {/* Card Backend */}
-                                            <div class="card text-center mx-lg-3" id="eventPilotCard">
+                                            <div class="card text-center mx-lg-3 h-100" id="eventPilotCard">
                                                 <img src={backendAbschlussBild} class="card-img-top" alt="Backend Abschlussprojekt" />
-                                                <div class="card-body">
+                                                <div class="card-body d-flex flex-column">
                                                     <p class="card-title fw-semibold pt-3 lh-sm">Backend<br />Abschlussprojekt</p>
                                                     <h5 className="py-2">EventPilot</h5>
                                                     <p class="card-text">Events in der Nähe finden und Veröffentlichen von Events </p>
@@ -229,13 +229,13 @@ const ProfessionalData = ({ scrollToCertificates }) => {
                     <div class="tab-pane fade" role="tabpanel" aria-labelledby="studium-tab" tabindex="0" id="tabPaneHSNiederrhein">
                         <div className="row bg-beige-light p-5 rounded-4">
                             <div className="row">
-                                <div className="col flex-grow-0" id="hsNiederrheinLogoWrapper">
+                                <div className="col flex-grow-0 p-xs-0" id="hsNiederrheinLogoWrapper">
                                     <div className="basic-logo-light rounded-circle d-flex align-items-center justify-content-center">
                                         <img src={hsNiederrheinLogo} alt="Hochschule Niederrhein" className="hs-logo" id="hsNiederrheinLogo" />
                                     </div>
                                 </div>
 
-                                <div className="col p-lg-3 ps-lg-5">
+                                <div className="col p-sm-3 ps-lg-5">
                                     {/* Accordion Studium*/}
                                     <div class="accordion" id="accordionStudium">
                                         <div class="accordion-item">

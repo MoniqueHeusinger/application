@@ -7,8 +7,8 @@ const Hero = ({ scrollToContact }) => {
             <div className="container-fluid px-center-default">
                 <div className="mx-auto mt-250 pt-10 px-5 pb-3 bg-beige rounded-4 relative" gap={3}>
                     <div className="hero-img rounded-circle"></div>
-                    <div className="">
-                        <h1 className="font-thin mb-4">Hi, ich bin <br />
+                    <div>
+                        <h1 className="fw-light mb-4">Hi, ich bin <br />
                             Monique Heusinger und <br />
                             Fullstack Developerin!</h1>
                     </div>

@@ -3,7 +3,7 @@ import Container from "react-bootstrap/esm/Container";
 import "./TechStack.css";
 
 const TechStack = () => {
-    const stackList = ["HTML", "CSS", "Java Script", "SCSS", "React", "Node.js", "Express", "MongoDB", "Mongoose", "REST-API", "Git", "Github", "Tailwind", "Figma"]
+    const stackList = ["HTML", "CSS", "Java Script", "SCSS", "React", "Node.js", "Express", "MongoDB", "Mongoose", "REST-API", "Git", "Github", "Tailwind", "Bootstrap", "Figma"]
 
     return (
         <div className="relative my-11 px-center-default">
