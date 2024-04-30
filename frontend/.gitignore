@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+# Old files used for Wertgarantie application:
+NavigationWert.jsx
+ApplicationWert.jsx
+Certificates.jsx
+Certificates.css
+ProfessionalDataWert.jsx
