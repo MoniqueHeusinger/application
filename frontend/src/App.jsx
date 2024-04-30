@@ -8,7 +8,7 @@ import TechStack from "./pageContent/techStack/TechStack";
 import About from "./pageContent/about/About";
 import Application from "./pageContent/application/Application";
 import ProfessionalData from "./pageContent/professionalData/ProfessionalData";
-import Certificates from "./pageContent/certificates/Certificates";
+// import Certificates from "./pageContent/certificates/Certificates";
 import Contact from "./pageContent/contact/Contact";
 import ScrollToTopBtn from "./components/ScrollToTopBtn/ScrollToTopBtn";
 import { BrowserRouter, Routes } from "react-router-dom";
@@ -43,7 +43,7 @@ function App() {
         <ProfessionalData scrollToCertificates={scrollToCertificates} />
 
         <Application scrollToContact={scrollToContact} />
-        <Certificates />
+        {/* <Certificates /> */}
         <Contact />
         <Footer />
         <ScrollToTopBtn />

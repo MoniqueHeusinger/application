@@ -27,6 +27,14 @@ dist-ssr
 # Old files used for Wertgarantie application:
 NavigationWert.jsx
 ApplicationWert.jsx
-Certificates.jsx
-Certificates.css
+CertificatesWert.jsx
+CertificatesWert.css
 ProfessionalDataWert.jsx
+
+mh-diplom-zeugnis-1.jpg
+mh-diplom-zeugnis.pdf
+mh-html-css-zeugnis.jpg
+mh-htmlCss.pdf
+mh-fullstack.pdf
+mh-real-zeugnis-1.jpg
+mh-real-zeugnis.pdf

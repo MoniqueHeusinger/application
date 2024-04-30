@@ -15,11 +15,11 @@ const Application = ({ scrollToContact }) => {
                 <div className="row">
                     <h2 className="pt-5">Bewerbung</h2>
                 </div>
-                <div className="row">
+                {/* <div className="row">
                     <div className="col-lg-4 px-md-4 mx-auto">
                         <h5 className="lh-base">als <span className="text-uppercase">Frontend Developerin</span> bei der <span className="text-uppercase">Wertgarantie</span> Group</h5>
                     </div>
-                </div>
+                </div> */}
 
             </div>
             <div className="row mx-auto px-center-default mt-5">
@@ -40,7 +40,7 @@ const Application = ({ scrollToContact }) => {
 
                 <div className="col-md-8 text-end ps-7 pt-3">
                     <p>Oecotrophologie studieren und eine Leidenschaft für Webentwicklung zu haben, mag auf den ersten Blick unkonventionell erscheinen. Doch schon während meiner Jugend entdeckte ich meine Begeisterung für kreative Ausdrucksformen am PC. </p>
-                    <p>Meinen ersten Schritt in die Webentwicklung setzte ich während meiner Diplomarbeit, wo ich eine Webseite u.a. mit PHP und MySQL erstellte und damit meine Begeisterung für das Programmieren entdeckte.</p>
+                    <p>In meiner Freizeit liebe ich es mit Bildbearbeitungssoftware tolle Designs zu erstellen. Meinen ersten Schritt in die Webentwicklung setzte ich während meiner Diplomarbeit, bei der ich eine Webseite erstellte und meine Affinität für das Programmieren entdeckte.</p>
                 </div>
             </div>
 
@@ -48,7 +48,7 @@ const Application = ({ scrollToContact }) => {
 
                 <div className="col-md-8 text-start">
                     <p>In den folgenden elf Jahren habe ich als Mitarbeiterin im Qualitätsmanagement bei der real GmbH meinen ausgeprägten Qualitätsanspruch unter Beweis gestellt.</p>
-                    <p>Das kontinuierliche Einarbeiten von neuen rechtlichen Vorgaben gehörte dabei ebenso zu meinen Aufgaben, wie die Erstellung von gewissenhaften Dokumentationen.</p>
+                    <p> Das kontinuierliche Einarbeiten von neuen rechtlichen Vorgaben in das QM-Handbuch gehörte dabei ebenso zu meinen Aufgaben, wie die Erstellung von gewissenhaften Dokumentationen.</p>
                 </div>
                 <div className="col">
                     <img src={realBag} alt="" />
@@ -65,25 +65,24 @@ const Application = ({ scrollToContact }) => {
                     <img src={bootcamp} alt="" />
                 </div>
                 <div className="col-md-8 pt-3 text-end">
-                    <p>In siebenundzwanzig Wochen absolvierte  ich ein intensives Vollzeit-Bootcamp zur Fullstack Web-Entwicklerin.</p>
-                    <p>In diesen intensiven Monaten habe ich jeden Tag gecodet - sowohl selbstständig als auch im Team - und mein neues Wissen in Aufgaben oder Projekten angewandt. Dabei bringt mich auch ein Merge-Konflikt nicht mehr ins Schwitzen.</p>
+                    <p>In siebenundzwanzig Wochen absolvierte  ich ein intensives Vollzeit-Bootcamp zur Fullstack Web-Entwicklerin, bei dem ich täglich an Aufgaben oder Projekten gecodet habe - sowohl selbstständig als auch im Team - und so mein neu gewonnenes Wissen vertiefen konnte.</p>
                 </div>
             </div>
 
             <div className="row mx-auto px-center-default mt-5">
 
                 <div className="col-md-8 text-start">
-                    <p>Ich freue mich darauf in einem familiären und wertschätzenden Unternehmen wie der WERTGARANTIE Group zu arbeiten und dort in einem unterstützenden Team nicht nur meine Programmier-Fähigkeiten, sondern auch meine Gaming-Skills weiterzuentwickeln - im Feierabend selbstverständlich.</p>
+                    <p>Hochmotiviert und fest entschlossen, mich in diese dynamische Welt einzubringen, bin ich gespannt in neue Technologien einzutauchen und mein Wissen kontinuierlich zu erweitern.</p>
                 </div>
                 <div className="col">
                     <img src={handshake} alt="" />
                 </div>
             </div>
-            <div className="row mx-auto px-center-default mt-5">
+            {/* <div className="row mx-auto px-center-default mt-5">
                 <div className="col-12 shadow-box rounded-4 py-4 px-6">
                     <h6 className="lh-base">So wie ihr die Produkte eurer Kunden absichert, garantiere ich dir: Mit Entschlossenheit und Kreativität schaffe ich Frontend-Lösungen von bleibendem Wert!</h6>
                 </div>
-            </div>
+            </div> */}
 
             <div className="row mx-auto px-center-default mt-5 flex-column" id="getInContact">
                 <h3>Ihr wollt mich persönlich kennenlernen?</h3>
