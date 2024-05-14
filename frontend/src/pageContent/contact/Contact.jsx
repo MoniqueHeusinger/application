@@ -19,7 +19,7 @@ const Contact = () => {
             <div className="row mx-auto px-center-default my-5 align-items-center ">
                 <div className="col">
                     <div class="card flex-row rounded-4 align-items-center my-4 hover-scale">
-                        <div className="container rounded-end-0 rounded-4 p-3" id="iconContainerMail">
+                        <div className="container rounded-end-0 rounded-4 p-3 w-25" id="iconContainerMail">
                             <img src={mail} class="card-img-top" alt="E-Mail" />
                         </div>
 
@@ -30,7 +30,7 @@ const Contact = () => {
 
                     {/* Phone */}
                     <div class="card flex-row rounded-4 align-items-center my-4 hover-scale">
-                        <div className="container rounded-end-0 rounded-4 p-3" id="iconContainerPhone">
+                        <div className="container rounded-end-0 rounded-4 p-3 w-25" id="iconContainerPhone">
                             <img src={phone} class="card-img-top" alt="Telefonnummer" />
                         </div>
 
@@ -40,16 +40,16 @@ const Contact = () => {
                     </div>
                     {/* Address */}
                     <div class="card flex-row rounded-4 align-items-center my-4 hover-scale">
-                        <div className="container rounded-end-0 rounded-4 p-3" id="iconContainerPhone">
-                            <img src={address} class="card-img-top" alt="Telefonnummer" />
+                        <div className="container rounded-end-0 rounded-4 p-3 w-25 h-100" id="iconContainerAddress">
+                            <img src={address} class="card-img-top h-100" alt="Adresse" />
                         </div>
 
-                        <div class="card-body">
+                        <div class="card-body" id="addressContainer">
                             <a href="https://maps.app.goo.gl/ZgHcsctQCgcqhg597" className="card-text text-decoration-none" target="_blank">Weizenkamp 5, Mönchengladbach</a>
                         </div>
                     </div>
-
                 </div>
+                <div class="w-100"></div>
                 <div className="col">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160121.38735434876!2d6.249005134050994!3d51.16569422364861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8ac984c406469%3A0x5445cd8ac7bfc850!2sM%C3%B6nchengladbach!5e0!3m2!1sde!2sde!4v1713297680746!5m2!1sde!2sde" width="400" height="300" allowfullscreen="" loading="lazy" className="map-sm" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
