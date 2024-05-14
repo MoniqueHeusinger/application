@@ -16,8 +16,8 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className="row mx-auto px-center-default my-5 align-items-center ">
-                <div className="col">
+            <div className="row mx-auto px-center-default my-5 align-items-center justify-content-center">
+                <div className="col-sm-10 col-md-8">
                     <div class="card flex-row rounded-4 align-items-center my-4 hover-scale">
                         <div className="container rounded-end-0 rounded-4 p-3 w-25" id="iconContainerMail">
                             <img src={mail} class="card-img-top" alt="E-Mail" />
@@ -45,13 +45,13 @@ const Contact = () => {
                         </div>
 
                         <div class="card-body" id="addressContainer">
-                            <a href="https://maps.app.goo.gl/ZgHcsctQCgcqhg597" className="card-text text-decoration-none" target="_blank">Weizenkamp 5, Mönchengladbach</a>
+                            <a href="https://maps.app.goo.gl/ZgHcsctQCgcqhg597" className="card-text text-decoration-none fs-6-5" target="_blank">Weizenkamp 5, Mönchengladbach</a>
                         </div>
                     </div>
                 </div>
-                <div class="w-100"></div>
-                <div className="col">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160121.38735434876!2d6.249005134050994!3d51.16569422364861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8ac984c406469%3A0x5445cd8ac7bfc850!2sM%C3%B6nchengladbach!5e0!3m2!1sde!2sde!4v1713297680746!5m2!1sde!2sde" width="400" height="300" allowfullscreen="" loading="lazy" className="map-sm" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="w-100 d-lg-none"></div>
+                <div className="col-sm-12 col-md-4 col-lg-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160121.38735434876!2d6.249005134050994!3d51.16569422364861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8ac984c406469%3A0x5445cd8ac7bfc850!2sM%C3%B6nchengladbach!5e0!3m2!1sde!2sde!4v1713297680746!5m2!1sde!2sde" max-width="400" height="300" allowfullscreen="" loading="lazy" className="map-sm" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <div className="row mx-auto my-5 align-items-center social-icon-container px-md-4">
