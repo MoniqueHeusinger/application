@@ -11,16 +11,18 @@
 }
 
 .btn-transparent-dark {
-    background-color: transparent;
+    background-color: var(--grey-medium);
+    color: var(--beige-light);
 }
 
 .btn-transparent-light:hover {
-    background-color: var(--beige-light);
+    background-color: var(--grey-medium);
+    color: var(--beige-light);
     transition: 0.4s;
 }
 
 
 .btn-transparent-dark:hover {
-    background-color: var(--grey-medium);
-    color: var(--beige-light);
+    background-color: transparent;
+    color: var(--text-dark);
 }

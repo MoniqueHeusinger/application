@@ -22,3 +22,12 @@ nav {
     box-shadow: none;
     ;
 }
+
+/* ================================
+    Modal: Access to Certificates
+================================== */
+#accessCodeInput {
+    width: 150px;
+    letter-spacing: 6px;
+    font-weight: 500;
+}

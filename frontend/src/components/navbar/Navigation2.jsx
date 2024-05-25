@@ -14,7 +14,12 @@ import { backendUrl } from "../../api/index.js";
 import { useCertificateContext } from "../../context/CertificateContext.jsx";
 import { useScrollContext } from "../../context/ScrollContext.jsx";
 
-function ModalCertificatesAccess(props) {
+
+
+
+// function ModalCertificatesAccess(props, { scrollToCertificatesSection, setScrollToCertificatesSection }) {
+//NEU:
+function ModalCertificatesAccess({ onHide, setScrollToCertificatesSection }) {
     const [lastnameInput, setLastnameInput] = useState("");
     const [accessCodeInput, setAccessCodeInput] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
@@ -25,7 +30,9 @@ function ModalCertificatesAccess(props) {
 
     const handleAccessGranted = () => {
         setCertificatesComponentVisible(true);
-        props.setScrollToCertificatesSection(true);
+        setScrollToCertificatesSection(true);
+        //NEU:
+        onHide();
     }
 
     const requestAccess = () => {
@@ -66,12 +73,14 @@ function ModalCertificatesAccess(props) {
 
     const handleClose = () => {
         setCloseModal(false);
-        props.onHide();
+        onHide();
     }
 
     return (
         <>
-            <Modal {...props} size="lg" closeButton centered onHide={handleClose}>
+            {/* <Modal {...props} size="lg" closeButton centered onHide={handleClose}> */}
+            {/* Neu: */}
+            <Modal size="lg" closeButton centered onHide={handleClose}>
                 <ModalHeader closeButton>
                 </ModalHeader>
 
@@ -84,6 +93,9 @@ function ModalCertificatesAccess(props) {
 
                     <a href="#" data-bs-toggle="tooltip" title="6-stelligen Code eingeben"><Form.Control size="lg" type="text" className="mx-auto mt-1 mb-4 text-center" placeholder="Code" value={accessCodeInput} onChange={(e) => setAccessCodeInput(e.target.value)} id="accessCodeInputField" /></a>
                     <ButtonClassic btnVariant="transparent-dark" buttonText="Zeugnisse anzeigen" onClick={() => requestAccess()} url="certificates" />
+                    {/* <ButtonClassic btnVariant="transparent-dark" buttonText="Zeugnisse anzeigen" onClick={(event) => requestAccess(event)} url="certificates" /> */}
+                    {/* Neu: */}
+                    {/* <ButtonClassic btnVariant="transparent-dark" buttonText="Zeugnisse anzeigen" onClick={requestAccess} /> */}
                     {errorMessage && <p className="text-danger">{errorMessage}</p>}
                 </ModalBody>
 
@@ -144,6 +156,8 @@ const Navigation = () => {
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link px-4 py-3" onClick={() => handleCertificatesClick()} aria-current="page" data-bs-dismiss="offcanvas">Zeugnisse</a>
+                                {/* <a className="nav-link px-4 py-3" onClick={handleCertificatesClick} aria-current="page" data-bs-dismiss="offcanvas">Zeugnisse</a> */}
+                                {/* <a className="nav-link px-4 py-3" onClick={() => { setModalCertificatesAccessShow(true); handleBtnClick("application") }} aria-current="page" data-bs-dismiss="offcanvas">Zeugnisse</a> */}
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link px-4 py-3" onClick={() => handleBtnClick("contact")} aria-current="page" data-bs-dismiss="offcanvas">Kontakt</a>
@@ -154,7 +168,7 @@ const Navigation = () => {
                     </div>
                 </div>
             </nav>
-
+            {/* Neu: */}
             <ModalCertificatesAccess show={modalCertificatesAccessShow} onHide={handleCloseModalCertificatesAccess} setScrollToCertificatesSection={setScrollToCertificatesSection} scrollToCertificatesSection={scrollToCertificatesSection} />
 
 

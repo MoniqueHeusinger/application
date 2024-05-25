@@ -1,7 +1,7 @@
 import ButtonClassic from "../../components/button/ButtonClassic";
 import "./Hero.css";
 
-const Hero = ({ scrollToContact }) => {
+const Hero = () => {
     return (
         <>
             <div className="container-fluid px-center-default">
@@ -13,7 +13,8 @@ const Hero = ({ scrollToContact }) => {
                             Fullstack Developerin!</h1>
                     </div>
                     <div className=""><p>Ich freue mich, dass du mehr über mich erfahren möchtest.</p><p>Anstelle eines trockenen Lebenslaufes zeige ich dir hier, wer ich bin, was ich kann und, was ich bisher erreicht habe - und noch mehr ;)</p><p>Du möchtest mit mir Kontakt aufnehmen? Kein Problem!</p>
-                        <ButtonClassic btnVariant="transparent-light" buttonText="Kontakt" onClick={scrollToContact} /></div>
+                        <ButtonClassic btnVariant="transparent-light" buttonText="Kontakt" url="contact" />
+                    </div>
                 </div >
             </div>
         </>
