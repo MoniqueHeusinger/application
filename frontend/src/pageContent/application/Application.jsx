@@ -5,9 +5,20 @@ import handshake from "../../assets/img/handshake.png";
 import bootcamp from "../../assets/img/bootcamp.svg";
 import heartGIF from "../../assets/img/hearts.gif";
 import ButtonClassic from "../../components/button/ButtonClassic";
+import { useCertificateContext } from "../../context/CertificateContext";
+import Certificates from "../certificates/Certificates";
+import { useEffect } from "react";
+import { useScrollContext } from "../../context/ScrollContext";
 
-const Application = ({ scrollToContact }) => {
+const Application = () => {
+    const { certificatesComponentVisible } = useCertificateContext();
+    const { scrollToSection } = useScrollContext();
 
+    useEffect(() => {
+        if (certificatesComponentVisible) {
+            scrollToSection("certificates");
+        }
+    }, [certificatesComponentVisible])
 
     return (
         <>
@@ -15,12 +26,6 @@ const Application = ({ scrollToContact }) => {
                 <div className="row">
                     <h2 className="pt-5">Bewerbung</h2>
                 </div>
-                {/* <div className="row">
-                    <div className="col-lg-4 px-md-4 mx-auto">
-                        <h5 className="lh-base">als <span className="text-uppercase">Frontend Developerin</span> bei der <span className="text-uppercase">Wertgarantie</span> Group</h5>
-                    </div>
-                </div> */}
-
             </div>
             <div className="row mx-auto px-center-default mt-5">
 
@@ -28,7 +33,7 @@ const Application = ({ scrollToContact }) => {
                     <p><strong>„the time is now“</strong> - nicht nur ein großartiger Songtitel, sondern auch mein Lebensmotto, das perfekt diesen Punkt in meiner beruflichen Laufbahn beschreibt.</p>
                 </div>
                 <div className="col">
-                    <iframe src="https://open.spotify.com/embed/track/6h9AH81lpDbjcsBz2ClqAE?utm_source=generator&theme=0" width="100%" height="152" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <iframe src="https://open.spotify.com/embed/track/6h9AH81lpDbjcsBz2ClqAE?utm_source=generator&theme=0" width="100%" height="152" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
             </div>
 
@@ -78,16 +83,14 @@ const Application = ({ scrollToContact }) => {
                     <img src={handshake} alt="" />
                 </div>
             </div>
-            {/* <div className="row mx-auto px-center-default mt-5">
-                <div className="col-12 shadow-box rounded-4 py-4 px-6">
-                    <h6 className="lh-base">So wie ihr die Produkte eurer Kunden absichert, garantiere ich dir: Mit Entschlossenheit und Kreativität schaffe ich Frontend-Lösungen von bleibendem Wert!</h6>
-                </div>
-            </div> */}
 
             <div className="row mx-auto px-center-default mt-5 flex-column" id="getInContact">
                 <h3>Ihr wollt mich persönlich kennenlernen?</h3>
-                <ButtonClassic btnVariant="transparent-dark" buttonText="zu meinen Kontaktdaten" onClick={scrollToContact} />
+                <ButtonClassic btnVariant="transparent-dark" buttonText="zu meinen Kontaktdaten" url="contact" />
             </div>
+
+            {/* Render Certificates */}
+            {certificatesComponentVisible && <Certificates />}
         </>
     );
 }

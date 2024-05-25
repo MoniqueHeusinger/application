@@ -8,15 +8,14 @@ import TechStack from "./pageContent/techStack/TechStack";
 import About from "./pageContent/about/About";
 import Application from "./pageContent/application/Application";
 import ProfessionalData from "./pageContent/professionalData/ProfessionalData";
-// import Certificates from "./pageContent/certificates/Certificates";
 import Contact from "./pageContent/contact/Contact";
 import ScrollToTopBtn from "./components/ScrollToTopBtn/ScrollToTopBtn";
-import { BrowserRouter, Routes } from "react-router-dom";
-
+import { BrowserRouter } from "react-router-dom";
+import { CertificateProvider } from "./context/CertificateContext";
+import { ScrollProvider } from "./context/ScrollContext";
 
 
 function App() {
-
   const scrollToContact = () => {
     const contactElement = document.getElementById('contact');
     if (contactElement) {
@@ -34,23 +33,26 @@ function App() {
   };
 
   return (
-    <>
-      <BrowserRouter>
-        <Navigation />
-        <Hero scrollToContact={scrollToContact} />
-        <TechStack />
-        <About />
-        <ProfessionalData scrollToCertificates={scrollToCertificates} />
+    <ScrollProvider>
+      <CertificateProvider>
+        <BrowserRouter>
+          <Navigation />
+          {/* <Navigation scrollToCertificates={scrollToCertificates} /> */}
+          {/* <Hero scrollToContact={scrollToContact} /> */}
+          <Hero />
+          <TechStack />
+          <About />
+          <ProfessionalData />
+          {/* <ProfessionalData scrollToCertificates={scrollToCertificates} /> */}
+          <Application />
+          {/* <Application scrollToContact={scrollToContact} /> */}
+          <Contact />
+          <Footer />
+          <ScrollToTopBtn />
+        </BrowserRouter>
+      </CertificateProvider>
+    </ScrollProvider>
 
-        <Application scrollToContact={scrollToContact} />
-        {/* <Certificates /> */}
-        <Contact />
-        <Footer />
-        <ScrollToTopBtn />
-      </BrowserRouter>
-
-
-    </>
   )
 }
 
