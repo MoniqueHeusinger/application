@@ -20,14 +20,14 @@ userRouter.post(
     }
 );
 
-// Generate and save access code
+// Generate and save new access code
 userRouter.post(
     "/accessCode",
     express.json(),
-    async function postGenerateAndSaveAccessCodeCtrl(req, res) {
+    async function postGenerateAndSaveNewAccessCodeCtrl(req, res) {
         try {
             const { lastname, email } = req.body;
-            const { user, accessCode } = await UserService.generateAndSaveAccessCode({ lastname, email });
+            const { user, accessCode } = await UserService.generateAndSaveNewAccessCode({ lastname, email });
             res.json({ success: true, user, accessCode });
         } catch (error) {
             console.log(error);
@@ -38,7 +38,7 @@ userRouter.post(
     }
 );
 
-// Verify access
+// Verify access to certificates
 userRouter.post(
     "/verifyAccess",
     express.json(),

@@ -31,3 +31,12 @@ nav {
     letter-spacing: 6px;
     font-weight: 500;
 }
+
+.modal-content .modal-footer .accordion .card {
+    border: none !important;
+}
+
+.modal-content .modal-footer .accordion .card .card-header {
+    background-color: transparent !important;
+    border-bottom: none !important;
+}
