@@ -3,23 +3,35 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import { useEffect, useState } from "react";
 import ModalFooter from "react-bootstrap/esm/ModalFooter";
 import Modal from "react-bootstrap/Modal";
 import ModalBody from "react-bootstrap/esm/ModalBody";
 import ModalHeader from "react-bootstrap/esm/ModalHeader";
 import ButtonClassic from "../button/ButtonClassic.jsx";
 import Form from "react-bootstrap/Form";
+import Accordion from 'react-bootstrap/Accordion';
+import AccordionContext from 'react-bootstrap/AccordionContext';
+import Card from 'react-bootstrap/Card';
+import { useContext, useEffect, useState } from "react";
 import { backendUrl } from "../../api/index.js";
 import { useCertificateContext } from "../../context/CertificateContext.jsx";
 import { useScrollContext } from "../../context/ScrollContext.jsx";
+import { useAccordionButton } from 'react-bootstrap/AccordionButton';
+import Col from "react-bootstrap/esm/Col.js";
+import Row from "react-bootstrap/esm/Row.js";
 
 function ModalCertificatesAccess(props) {
     const [lastnameInput, setLastnameInput] = useState("");
     const [accessCodeInput, setAccessCodeInput] = useState("");
+    const [lastnameFormInput, setLastnameFormInput] = useState("");
+    const [emailFormInput, setEmailFormInput] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
+    const [successMessage, setSuccessMessage] = useState("");
+    const [formErrorMessage, setFormErrorMessage] = useState("Pflichtfeld!");
+    const [errorMessageNewCode, setErrorMessageNewCode] = useState("");
     const [certificatesVisible, setCertificatesVisible] = useState(false);
     const [closeModal, setCloseModal] = useState(false);
+    const [validated, setValidated] = useState(false);
 
     const { setCertificatesComponentVisible } = useCertificateContext();
 
@@ -52,6 +64,8 @@ function ModalCertificatesAccess(props) {
                     setCertificatesVisible(true);
                     setCloseModal(true);
                     setErrorMessage("");
+                    setErrorMessageNewCode("");
+                    setSuccessMessage("");
                     handleAccessGranted();
                     handleClose();
                 } else {
@@ -69,6 +83,77 @@ function ModalCertificatesAccess(props) {
         props.onHide();
     }
 
+    // ============================
+    // get new code-accordion
+    // ============================
+    const getNewCodeText = "neuen Code anfordern";
+    const abortText = "abbrechen";
+
+    function ContextAwareToggle({ children, eventKey, callback }) {
+        const { activeEventKey } = useContext(AccordionContext);
+
+        const decoratedOnClick = useAccordionButton(
+            eventKey,
+            () => callback && callback(eventKey),
+        );
+
+        const isCurrentEventKey = activeEventKey === eventKey;
+
+        return (
+            <ButtonClassic btnVariant="transparent-light" buttonText={isCurrentEventKey ? abortText : getNewCodeText} onClick={decoratedOnClick} />
+        );
+    }
+
+    const handleSubmitFormData = (event) => {
+        const form = event.currentTarget;
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+
+        setValidated(true);
+
+        if (form.checkValidity()) {
+            getNewAccessCode();
+        }
+    }
+
+    const getNewAccessCode = () => {
+        if (lastnameFormInput && emailFormInput) {
+            fetch(backendUrl + "/api/user/accessCode", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ lastname: lastnameFormInput, email: emailFormInput })
+            })
+                .then(response => {
+                    if (response.ok) {
+                        return response.json();
+                    } else {
+                        throw new Error("Fehler beim Zugriff überprüfen: " + response.statusText);
+                    }
+                })
+                .then(data => {
+                    if (data.success) {
+                        console.log("Dein neuer Code lautet: ", data.accessCode);
+                        setSuccessMessage(`Dein neuer Code lautet: ${data.accessCode}`);
+                        setErrorMessageNewCode("");
+                    } else {
+                        setErrorMessage("Dein Name bzw. deine E-Mail-Adresse sind mir nicht bekannt.");
+                    }
+                })
+                .catch(error => {
+                    console.error("Fehler beim Zugriff überprüfen: ", error);
+                    setErrorMessageNewCode("Dein Name bzw. deine E-Mail-Adresse sind mir nicht bekannt. Bitte kontaktiere mich direkt, um Zugriff zu erhalten.");
+                });
+        } else {
+            setFormErrorMessage("Pflichtfeld! Eingabe erforderlich.");
+            return;
+        }
+
+    }
+
+
+
     return (
         <>
             <Modal {...props} size="lg" closeButton centered onHide={handleClose}>
@@ -76,20 +161,54 @@ function ModalCertificatesAccess(props) {
                 </ModalHeader>
 
                 <ModalBody className="mx-5 p-3">
-                    <h5 className="lh-base">Um Zugriff auf meine Zeugnisse zu erhalten, gib bitte einen gültigen 6-stelligen Code ein.</h5>
-                    <p className="mt-4">Diesen hast du vorab per E-Mail von mir erhalten.</p>
+                    <h5 className="lh-base mb-4">Um Zugriff auf meine Zeugnisse zu erhalten, gib bitte deinen <span className="fw-bold">Nachnamen</span> und einen gültigen <span className="fw-bold">6-stelligen Code</span> ein <br /><span className="fw-normal fst-italic">(diesen hast du vorab per E-Mail von mir erhalten)</span>.</h5>
 
-                    <Form.Label className="mt-2 h4"><strong>Zugriffscode:</strong></Form.Label>
                     <a href="#" data-bs-toggle="tooltip" title="Nachname eingeben"><Form.Control size="lg" type="text" className="mx-auto mt-1 mb-4 text-center" value={lastnameInput} onChange={(e) => setLastnameInput(e.target.value)} autoFocus placeholder="Nachname" id="lastnameInput" /></a>
 
                     <a href="#" data-bs-toggle="tooltip" title="6-stelligen Code eingeben"><Form.Control size="lg" type="text" className="mx-auto mt-1 mb-4 text-center" placeholder="Code" value={accessCodeInput} onChange={(e) => setAccessCodeInput(e.target.value)} id="accessCodeInputField" /></a>
                     <ButtonClassic btnVariant="transparent-dark" buttonText="Zeugnisse anzeigen" onClick={() => requestAccess()} url="certificates" />
                     {errorMessage && <p className="text-danger">{errorMessage}</p>}
+
                 </ModalBody>
 
                 <ModalFooter className="mt-3 flex-column">
-                    <p className="">Neu hier oder Code vergessen?</p>
-                    <ButtonClassic btnVariant="transparent-light" buttonText="neuen Code anfordern" />
+                    <p className="fw-semibold">Neu hier oder Code vergessen?</p>
+
+                    {/* Get new code  */}
+                    <Accordion className="w-100" defaultActiveKey="0">
+                        <Card>
+                            <Card.Header>
+                                <ContextAwareToggle eventKey="1"></ContextAwareToggle>
+                            </Card.Header>
+                            <Accordion.Collapse eventKey="1">
+                                <Card.Body>
+                                    <h6 className="px-5">Gib die folgenden Daten ein, um einen neuen Code zu erhalten:</h6>
+                                    <Form className="mt-4" noValidate validated={validated}>
+                                        <Row className="mb-2">
+                                            <Form.Group as={Col} controlId="validationLastname">
+                                                <Form.Control type="text" placeholder="Nachname *" value={lastnameFormInput} onChange={(e) => setLastnameFormInput(e.target.value)} required />
+                                                <Form.Control.Feedback type="invalid">{formErrorMessage}</Form.Control.Feedback>
+                                            </Form.Group>
+                                        </Row>
+                                        <Row className="mb-2">
+                                            <Form.Group as={Col} controlId="validationMail">
+                                                <Form.Control type="email" placeholder="E-Mal-Adresse *" value={emailFormInput} onChange={(e) => setEmailFormInput(e.target.value)} required />
+                                                <Form.Control.Feedback type="invalid">{formErrorMessage}</Form.Control.Feedback>
+                                            </Form.Group>
+                                        </Row>
+                                        <Row className="mb-2">
+                                            <p className="ps-4 fs-7 fw-semibold text-start text-color-medium">* Pflichtfelder</p>
+                                        </Row>
+                                        <ButtonClassic btnVariant="transparent-dark" buttonText="neuen Code anfordern" onClick={handleSubmitFormData} />
+                                        <Row>
+                                            {successMessage && <p className="fs-5 fw-semibold text-success">{successMessage}</p>}
+                                            {errorMessageNewCode && <p className="fs-5 fw-semibold text-danger">{errorMessageNewCode}</p>}
+                                        </Row>
+                                    </Form>
+                                </Card.Body>
+                            </Accordion.Collapse>
+                        </Card>
+                    </Accordion>
                 </ModalFooter>
             </Modal>
         </>

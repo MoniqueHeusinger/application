@@ -1,9 +1,9 @@
 import User from "../models/User.js";
 
-export async function generateAndSaveAccessCode({ lastname, email }) {
+export async function generateAndSaveNewAccessCode({ lastname, email }) {
     // wenn es den lastname in der db gibt, dann erzeuge einen randomAccessCode und speichere ihn im jeweiligen User ab
 
-    const user = await User.findOne({ $or: [{ lastname }, { email }] });
+    const user = await User.findOne({ $and: [{ lastname }, { email }] });
 
     if (!user) {
         throw new Error("User not found");
