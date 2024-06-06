@@ -23,6 +23,16 @@ dist-ssr
 *.sln
 *.sw?
 
+# Single icons that are part of a picture and are not needed anymore
+certificate-icon.png
+audit-icon.png
+dev-icon.png
+dev-computer-icon.png
+cheese-icon.png
+day-night-icon.png
+food.icon.png
+hearts-icon.png
+
 
 # Old files used for Wertgarantie application:
 NavigationWert.jsx
