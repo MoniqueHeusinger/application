@@ -23,15 +23,15 @@ dist-ssr
 *.sln
 *.sw?
 
-# Single icons that are part of a picture and are not needed anymore
-certificate-icon.png
-audit-icon.png
-dev-icon.png
-dev-computer-icon.png
-cheese-icon.png
-day-night-icon.png
-food.icon.png
-hearts-icon.png
+# Certificates
+mh-real-zeugnis-s.jpg
+mh-supercode-zeugnis-s.jpg
+mh-diplom-zeugnis-s.jpg
+mh-html-css-zeugnis-s.jpg
+mh-fullstack_wz.pdf
+mh-htmlCss_wz.pdf
+mh-real-zeugnis_wz.pdf
+mh-diplom-zeugnis_wz.pdf
 
 
 # Old files used for Wertgarantie application:

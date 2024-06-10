@@ -1,13 +1,13 @@
 import "./Certificates.css";
-import realZeugnis from "../../assets/img/mh-real-zeugnis-1.jpg";
-import fullstackZeugnis from "../../assets/img/mh-supercode-zeugnis.jpg";
-import diplom from "../../assets/img/mh-diplom-zeugnis-1.jpg";
-import htmlZeugnis from "../../assets/img/mh-html-css-zeugnis.jpg";
+import realZeugnis from "../../assets/img/mh-real-zeugnis-s.jpg";
+import fullstackZeugnis from "../../assets/img/mh-supercode-zeugnis-s.jpg";
+import diplom from "../../assets/img/mh-diplom-zeugnis-s.jpg";
+import htmlZeugnis from "../../assets/img/mh-html-css-zeugnis-s.jpg";
 import ButtonClassic from "../../components/button/ButtonClassic";
-import fullstackPDF from "../../assets/img/mh-fullstack.pdf";
-import htmlCssPDF from "../../assets/img/mh-htmlCss.pdf";
-import realPDF from "../../assets/img/mh-real-zeugnis.pdf";
-import diplomPDF from "../../assets/img/mh-diplom-zeugnis.pdf";
+import fullstackPDF from "../../assets/img/mh-fullstack_wz.pdf";
+import htmlCssPDF from "../../assets/img/mh-htmlCss_wz.pdf";
+import realPDF from "../../assets/img/mh-real-zeugnis_wz.pdf";
+import diplomPDF from "../../assets/img/mh-diplom-zeugnis_wz.pdf";
 
 
 const Certificates = () => {
@@ -22,7 +22,7 @@ const Certificates = () => {
                         <div className="card mb-3 hover-scale">
                             <div className="row g-0 align-items-center">
                                 <div className="col-md-4">
-                                    <img src={fullstackZeugnis} className="img-fluid rounded-start" alt="..." />
+                                    <img src={fullstackZeugnis} className="img-fluid rounded-start" alt="Fullstack Developer Zeugnis" />
                                 </div>
                                 <div className="col-md-8">
                                     <div className="card-body">
@@ -41,7 +41,7 @@ const Certificates = () => {
                             <div className="card mb-3 hover-scale">
                                 <div className="row g-0 align-items-center">
                                     <div className="col-md-4">
-                                        <img src={htmlZeugnis} className="img-fluid rounded-start" alt="..." />
+                                        <img src={htmlZeugnis} className="img-fluid rounded-start" alt="HTML & CSS Zertifikat" />
                                     </div>
                                     <div className="col-md-8">
                                         <div className="card-body">
@@ -63,7 +63,7 @@ const Certificates = () => {
                         <div className="card mb-3 hover-scale">
                             <div className="row g-0 align-items-center">
                                 <div className="col-md-4">
-                                    <img src={realZeugnis} className="img-fluid rounded-start" alt="..." />
+                                    <img src={realZeugnis} className="img-fluid rounded-start" alt="real Arbeitszeugnis" />
                                 </div>
                                 <div className="col-md-8">
                                     <div className="card-body">
@@ -82,7 +82,7 @@ const Certificates = () => {
                             <div className="card mb-3 hover-scale">
                                 <div className="row g-0 align-items-center">
                                     <div className="col-md-4">
-                                        <img src={diplom} className="img-fluid rounded-start" alt="..." />
+                                        <img src={diplom} className="img-fluid rounded-start" alt="Diplomzeugnis" />
                                     </div>
                                     <div className="col-md-8">
                                         <div className="card-body">
