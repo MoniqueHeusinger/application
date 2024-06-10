@@ -52,8 +52,10 @@ const Application = () => {
             <div className="row mx-auto px-center-default mt-5 align-items-center">
 
                 <div className="col-md-8 text-start">
-                    <p>In den folgenden elf Jahren habe ich als Mitarbeiterin im Qualitätsmanagement bei der real GmbH meinen ausgeprägten Qualitätsanspruch unter Beweis gestellt.</p>
-                    <p> Das kontinuierliche Einarbeiten von neuen rechtlichen Vorgaben in das QM-Handbuch gehörte dabei ebenso zu meinen Aufgaben, wie die Erstellung von gewissenhaften Dokumentationen.</p>
+                    <p>In den folgenden elf Jahren habe ich als Mitarbeiterin im Qualitätsmanagement bei der real GmbH meinen ausgeprägten Qualitätsanspruch unter Beweis gestellt. Dabei gehörte die Pflege des QM-Handbuchs zu meinen Hauptaufgaben. Ich habe komplexe (rechtliche oder interne) Vorgaben analysiert, um sie anschließend in praktikable interne Prozesse umzuwandeln.</p>
+                    <p>Während meiner Zeit im real-Qualitätsmanagement war ich hauptverantwortlich für die Koordination der Bio-Audits für die real-Märkte. Neben der Vorbereitung und Begleitung des Audits der Zentrale, habe ich ebenfalls die Märkte bei der Vor- und Nachbereitung von Audits unterstützt.</p>
+                    <p>Bei der Bearbeitung von zum Teil kritischen Anfragen von Kunden, Behörden oder Medien habe ich gelernt mit unterschiedlichen Personenkreisen zu kommunizieren und auch unter Zeitdruck den Fokus auf das Wesentliche zu setzen.</p>
+                    <p>Neben den wechselnden fachlichen Herausforderungen hat mir die Arbeit im Team und die interdisziplinäre Zusammenarbeit mit Kollegen besonders gut gefallen.</p>
                 </div>
                 <div className="col">
                     <img src={realBag} alt="" />
@@ -70,7 +72,8 @@ const Application = () => {
                     <img src={bootcamp} alt="" />
                 </div>
                 <div className="col-md-8 pt-3 text-end">
-                    <p>In siebenundzwanzig Wochen absolvierte  ich ein intensives Vollzeit-Bootcamp zur Fullstack Web-Entwicklerin, bei dem ich täglich an Aufgaben oder Projekten gecodet habe - sowohl selbstständig als auch im Team - und so mein neu gewonnenes Wissen vertiefen konnte.</p>
+                    <p>Die Liquidation der real GmbH habe ich als Chance gesehen mich weiterzubilden und so meine Begeisterung für die Webentwicklung zu meinem Beruf zu machen.</p>
+                    <p>In siebenundzwanzig Wochen absolvierte  ich ein intensives Vollzeit-Bootcamp zur Full Stack Web-Entwicklerin. Die täglichen Aufgaben und Projekte habe ich genutzt, um - sowohl selbstständig als auch im Team - meine Programmierkenntnisse stetig zu vertiefen. Hierbei lege ich viel Wert auf sorgfältige Planung und kontinuierliches Testing meines Codes.</p>
                 </div>
             </div>
 
