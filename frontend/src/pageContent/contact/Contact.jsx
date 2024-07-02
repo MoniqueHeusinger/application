@@ -69,7 +69,7 @@ const Contact = () => {
                 </div>
                 {/* Discord */}
                 <div className="col">
-                    <a href="discordapp.com/users/moniqueheusinger" target="_blank"><img src={discordLogo} className="social-icon logo-sm" alt="Discord" /></a>
+                    <a href="https://discordapp.com/users/moniqueheusinger" target="_blank"><img src={discordLogo} className="social-icon logo-sm" alt="Discord" /></a>
 
                 </div>
             </div>
